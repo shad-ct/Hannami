@@ -4,6 +4,8 @@ import 'package:share_plus/share_plus.dart';
 import '../../core/widgets/bottom_nav.dart';
 import '../../models/diary_entry.dart';
 import '../../core/utils/date_utils.dart';
+import 'mood.dart';
+import 'mood_animated.dart';
 import '../../core/services/storage_service.dart';
 
 class DiaryDetailScreen extends StatelessWidget {
@@ -18,7 +20,6 @@ class DiaryDetailScreen extends StatelessWidget {
       return Scaffold(
         appBar: AppBar(title: const Text('Diary Detail')),
         body: const Center(child: Text('Entry not found')),
-        bottomNavigationBar: HannamiBottomNav(currentRoute: routeName),
       );
     }
     return Scaffold(
@@ -59,6 +60,17 @@ class DiaryDetailScreen extends StatelessWidget {
             spacing: 16,
             runSpacing: 8,
             children: [
+              Tooltip(
+                message: moodByKey(e.mood).description,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    MoodEmojiAnimated(emoji: moodByKey(e.mood).emoji, animate: true, size: 22),
+                    const SizedBox(width: 4),
+                    Text(moodByKey(e.mood).name, style: const TextStyle(fontSize: 13)),
+                  ],
+                ),
+              ),
               _iconText(Icons.calendar_month, DateUtilsExt.friendly(e.dateTime)),
               if (e.placeName != null && e.placeName!.isNotEmpty)
                 _iconText(Icons.place, e.placeName!),
@@ -70,7 +82,6 @@ class DiaryDetailScreen extends StatelessWidget {
           Text(e.content, style: Theme.of(context).textTheme.bodyMedium),
         ],
       ),
-      bottomNavigationBar: HannamiBottomNav(currentRoute: routeName),
     );
   }
 

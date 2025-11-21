@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'diary_controller.dart';
+import 'mood.dart';
+import 'mood_animated.dart';
 
 class DiaryEditorScreen extends StatefulWidget {
   const DiaryEditorScreen({super.key});
@@ -19,6 +21,7 @@ class _DiaryEditorScreenState extends State<DiaryEditorScreen> {
   String? _weatherSummary;
   double? _lat;
   double? _lon;
+  String _selectedMood = 'neutral';
 
   Future<void> _pickImages() async {
     final files = await _controller.pickImagesAndStoreTemp();
@@ -33,6 +36,7 @@ class _DiaryEditorScreenState extends State<DiaryEditorScreen> {
     final entry = await _controller.createAndPersist(
       title: _titleController.text.trim().isEmpty ? 'Untitled' : _titleController.text.trim(),
       content: _bodyController.text.trim(),
+      mood: _selectedMood,
       imageFiles: _images,
     );
     _weatherSummary = entry.weatherSummary;
@@ -67,6 +71,60 @@ class _DiaryEditorScreenState extends State<DiaryEditorScreen> {
             minLines: 6,
             maxLines: 12,
             decoration: const InputDecoration(labelText: 'Content', alignLabelWithHint: true, border: OutlineInputBorder()),
+          ),
+          const SizedBox(height: 16),
+          Text('Mood', style: Theme.of(context).textTheme.titleSmall),
+          const SizedBox(height: 8),
+          SizedBox(
+            height: 84,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Row(
+                children: [
+                  for (final mood in diaryMoods)
+                    Padding(
+                      padding: const EdgeInsets.only(right: 12),
+                      child: Tooltip(
+                        message: mood.description,
+                        preferBelow: false,
+                        child: GestureDetector(
+                          onTap: () => setState(() => _selectedMood = mood.key),
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 180),
+                            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                            decoration: BoxDecoration(
+                              color: _selectedMood == mood.key ? Theme.of(context).colorScheme.primaryContainer : Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: _selectedMood == mood.key ? Theme.of(context).colorScheme.primary : Colors.grey.shade300,
+                                width: 1.6,
+                              ),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                MoodEmojiAnimated(emoji: mood.emoji, animate: _selectedMood == mood.key, size: 28),
+                                const SizedBox(height: 4),
+                                Text(
+                                  mood.name,
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                    color: _selectedMood == mood.key
+                                        ? Theme.of(context).colorScheme.onPrimaryContainer
+                                        : Colors.black87,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ),
           ),
           const SizedBox(height: 16),
           Row(
