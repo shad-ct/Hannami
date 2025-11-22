@@ -20,7 +20,7 @@ Designed for mindfulness and emotional clarity, wrapped in a soothing and custom
 - 😊 **Mood calendar** to visualize emotional patterns across days and months  
 - 🖼 **Add photos, tags, and textual reflections** to remember moments vividly  
 - 🎨 **Themes and UI personalization** to match your taste  
-- 🔄 **Cloud sync support** so memories stay backed up and accessible  
+- 🔄 **Complete offline! complete privacy** so memories stay backed up and accessible. no worries about data breach and privacy.
 
 ---
 
