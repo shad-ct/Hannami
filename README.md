@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="2048" height="2048" alt="Gemini_Generated_Image_rb2j0qrb2j0qrb2j" src="https://github.com/user-attachments/assets/bcfcd055-84ab-4947-92a2-2a8494ad6963" />
+<img width="100" height="100" alt="Gemini_Generated_Image_rb2j0qrb2j0qrb2j" src="https://github.com/user-attachments/assets/bcfcd055-84ab-4947-92a2-2a8494ad6963" />
 
 # 🌸 Hannami  
 ### Guided Diary & Mood Journal
