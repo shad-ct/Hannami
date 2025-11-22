@@ -42,8 +42,6 @@ The latest APK can be downloaded from the **Releases** page:
 Hannami is built using:
 - **Flutter**
 - **Dart**
-- **Firebase**
-- **Riverpod / State Management** (if applicable — update as needed)
 - **Material You design principles**
 
 ---
