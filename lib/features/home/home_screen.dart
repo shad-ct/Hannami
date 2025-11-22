@@ -47,7 +47,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 delegate: DiarySearchDelegate(),
               );
               if (selected != null && mounted) {
-                Navigator.pushNamed(context, '/diary-detail', arguments: selected);
+                final result = await Navigator.pushNamed(context, '/diary-detail', arguments: selected);
+                if (result == 'deleted' || result is DiaryEntry) {
+                  await _refresh();
+                }
               }
             },
             icon: const Icon(Icons.search),
@@ -74,11 +77,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: e.title,
                 snippet: e.content,
                 date: e.dateTime,
-                onTap: () => Navigator.pushNamed(
-                  context,
-                  '/diary-detail',
-                  arguments: e,
-                ),
+                onTap: () async {
+                  final result = await Navigator.pushNamed(
+                    context,
+                    '/diary-detail',
+                    arguments: e,
+                  );
+                  if (result == 'deleted' || result is DiaryEntry) {
+                    await _refresh();
+                  }
+                },
               );
             },
             separatorBuilder: (_, __) => const SizedBox(height: 12),

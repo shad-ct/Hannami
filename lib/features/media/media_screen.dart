@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../core/widgets/bottom_nav.dart';
 import '../../core/widgets/swipe_nav.dart';
+import '../../models/diary_entry.dart';
 import 'media_controller.dart';
 import 'dart:io';
 
 class MediaScreen extends StatefulWidget {
   final bool showBottomNav;
   final bool enableSwipeNav;
-  const MediaScreen({super.key, this.showBottomNav = true, this.enableSwipeNav = true});
+  const MediaScreen({
+    super.key,
+    this.showBottomNav = true,
+    this.enableSwipeNav = true,
+  });
 
   @override
   State<MediaScreen> createState() => _MediaScreenState();
@@ -34,7 +39,12 @@ class _MediaScreenState extends State<MediaScreen> {
   Widget build(BuildContext context) {
     final routeName = ModalRoute.of(context)?.settings.name;
     final content = Scaffold(
-      appBar: AppBar(title: const Text('Media'), actions: [IconButton(onPressed: _refresh, icon: const Icon(Icons.refresh))]),
+      appBar: AppBar(
+        title: const Text('Media'),
+        actions: [
+          IconButton(onPressed: _refresh, icon: const Icon(Icons.refresh)),
+        ],
+      ),
       body: FutureBuilder<List<File>>(
         future: _future,
         builder: (context, snapshot) {
@@ -63,7 +73,9 @@ class _MediaScreenState extends State<MediaScreen> {
           );
         },
       ),
-      bottomNavigationBar: widget.showBottomNav ? HannamiBottomNav(currentRoute: routeName) : null,
+      bottomNavigationBar: widget.showBottomNav
+          ? HannamiBottomNav(currentRoute: routeName)
+          : null,
     );
     if (widget.enableSwipeNav) {
       return SwipeNav(currentRoute: routeName, child: content);
@@ -72,9 +84,10 @@ class _MediaScreenState extends State<MediaScreen> {
   }
 
   Future<void> _showPreview(File file) async {
+    final parentContext = context;
     await showDialog(
-      context: context,
-      builder: (context) => Dialog(
+      context: parentContext,
+      builder: (dialogContext) => Dialog(
         backgroundColor: Colors.black87,
         insetPadding: const EdgeInsets.all(16),
         child: ConstrainedBox(
@@ -97,10 +110,16 @@ class _MediaScreenState extends State<MediaScreen> {
                 children: [
                   ElevatedButton.icon(
                     onPressed: () async {
+                      final messenger = ScaffoldMessenger.of(parentContext);
                       final exported = await _controller.exportImage(file);
-                      if (exported != null && mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Saved copy to ${exported.path.split('/').last}')),
+                      if (!mounted) return;
+                      if (exported != null) {
+                        messenger.showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              'Saved copy to ${exported.path.split('/').last}',
+                            ),
+                          ),
                         );
                       }
                     },
@@ -116,20 +135,33 @@ class _MediaScreenState extends State<MediaScreen> {
                   ),
                   ElevatedButton.icon(
                     onPressed: () async {
+                      final messenger = ScaffoldMessenger.of(parentContext);
+                      final navigator = Navigator.of(parentContext);
+                      Navigator.of(dialogContext).pop();
                       final entry = await _controller.entryForImage(file.path);
                       if (!mounted) return;
-                      Navigator.of(context).pop();
                       if (entry != null) {
-                        Navigator.pushNamed(context, '/diary-detail', arguments: entry);
+                        final result = await navigator.pushNamed(
+                          '/diary-detail',
+                          arguments: entry,
+                        );
+                        if (!mounted) return;
+                        if (result == 'deleted' || result is DiaryEntry) {
+                          await _refresh();
+                        }
                       } else {
-                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Related entry not found')));
+                        messenger.showSnackBar(
+                          const SnackBar(
+                            content: Text('Related entry not found'),
+                          ),
+                        );
                       }
                     },
                     icon: const Icon(Icons.open_in_new),
                     label: const Text('Open Entry'),
                   ),
                   ElevatedButton.icon(
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () => Navigator.of(dialogContext).pop(),
                     icon: const Icon(Icons.close),
                     label: const Text('Close'),
                   ),
@@ -143,4 +175,3 @@ class _MediaScreenState extends State<MediaScreen> {
     );
   }
 }
-

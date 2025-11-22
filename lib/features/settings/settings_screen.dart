@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/widgets/bottom_nav.dart';
 import '../../core/widgets/swipe_nav.dart';
+import '../../core/fonts.dart';
 import 'settings_controller.dart';
 import '../../models/user_settings.dart';
 import 'package:file_selector/file_selector.dart';
@@ -10,7 +11,11 @@ import 'package:permission_handler/permission_handler.dart';
 class SettingsScreen extends StatefulWidget {
   final bool showBottomNav;
   final bool enableSwipeNav;
-  const SettingsScreen({super.key, this.showBottomNav = true, this.enableSwipeNav = true});
+  const SettingsScreen({
+    super.key,
+    this.showBottomNav = true,
+    this.enableSwipeNav = true,
+  });
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
@@ -18,19 +23,58 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   final _controller = SettingsController();
-  late Future<UserSettings> _future;
+  UserSettings? _settings;
+  bool _loading = true;
 
   @override
   void initState() {
     super.initState();
-    _future = _controller.load();
+    _loadSettings();
+  }
+
+  Future<void> _loadSettings() async {
+    final loaded = await _controller.load();
+    if (!mounted) return;
+    setState(() {
+      _settings = loaded;
+      _loading = false;
+    });
+  }
+
+  Future<void> _applySetting(
+    UserSettings Function(UserSettings current) mutate,
+  ) async {
+    final current = _settings;
+    if (current == null) return;
+    final updated = mutate(current);
+    if (!mounted) return;
+    setState(() => _settings = updated);
+    await _controller.update(updated);
+  }
+
+  Future<void> _pickFont() async {
+    final current = _settings;
+    if (current == null) return;
+    final selected = await showModalBottomSheet<String>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => _FontPickerSheet(current: current.preferredFont),
+    );
+    if (!mounted || selected == null || selected == current.preferredFont) {
+      return;
+    }
+    await _applySetting((_) => current.copyWith(preferredFont: selected));
   }
 
   Future<void> _exportCsv() async {
     final file = await _controller.exportCsv();
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(file == null ? 'No entries to export.' : 'Exported to ${file.path}')),
+      SnackBar(
+        content: Text(
+          file == null ? 'No entries to export.' : 'Exported to ${file.path}',
+        ),
+      ),
     );
   }
 
@@ -39,41 +83,46 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final routeName = ModalRoute.of(context)?.settings.name;
     final content = Scaffold(
       appBar: AppBar(title: const Text('Settings')),
-      body: FutureBuilder<UserSettings>(
-        future: _future,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
+      body: Builder(
+        builder: (context) {
+          if (_loading || _settings == null) {
             return const Center(child: CircularProgressIndicator());
           }
-          final s = snapshot.data ?? const UserSettings();
+          final s = _settings!;
           return ListView(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
             children: [
               const _SectionHeader('Diary Settings'),
               ListTile(
                 title: const Text('Data Folder'),
-                subtitle: Text(s.dataFolderPath == null || s.dataFolderPath!.isEmpty ? 'Not selected' : s.dataFolderPath!),
+                subtitle: Text(
+                  s.dataFolderPath == null || s.dataFolderPath!.isEmpty
+                      ? 'Not selected'
+                      : s.dataFolderPath!,
+                ),
                 trailing: const Icon(Icons.folder_open),
                 onTap: () async {
                   if (Platform.isAndroid) {
-                    await [Permission.storage, Permission.manageExternalStorage].request();
+                    await [
+                      Permission.storage,
+                      Permission.manageExternalStorage,
+                    ].request();
                   }
-                  final path = await getDirectoryPath(confirmButtonText: 'Use This Folder');
-                  if (path != null && path.isNotEmpty) {
-                    final updated = s.copyWith(dataFolderPath: path);
-                    await _controller.update(updated);
-                    if (mounted) setState(() => _future = Future.value(updated));
-                  }
+                  final path = await getDirectoryPath(
+                    confirmButtonText: 'Use This Folder',
+                  );
+                  if (!mounted || path == null || path.isEmpty) return;
+                  await _applySetting(
+                    (current) => current.copyWith(dataFolderPath: path),
+                  );
                 },
               ),
               SwitchListTile(
                 title: const Text('Backup Enabled'),
                 value: s.backupEnabled,
-                onChanged: (v) async {
-                  final updated = s.copyWith(backupEnabled: v);
-                  await _controller.update(updated);
-                  if (mounted) setState(() => _future = Future.value(updated));
-                },
+                onChanged: (v) => _applySetting(
+                  (current) => current.copyWith(backupEnabled: v),
+                ),
               ),
               ListTile(
                 title: const Text('Export Entries (CSV)'),
@@ -96,12 +145,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ListTile(
                             leading: const Icon(Icons.brightness_auto),
                             title: const Text('System'),
-                            onTap: () => Navigator.pop(context, ThemeMode.system),
+                            onTap: () =>
+                                Navigator.pop(context, ThemeMode.system),
                           ),
                           ListTile(
                             leading: const Icon(Icons.light_mode),
                             title: const Text('Light'),
-                            onTap: () => Navigator.pop(context, ThemeMode.light),
+                            onTap: () =>
+                                Navigator.pop(context, ThemeMode.light),
                           ),
                           ListTile(
                             leading: const Icon(Icons.dark_mode),
@@ -112,38 +163,40 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                     ),
                   );
-                  if (choice != null) {
-                    final updated = s.copyWith(themeMode: choice);
-                    await _controller.update(updated);
-                    if (mounted) setState(() => _future = Future.value(updated));
-                  }
+                  if (!mounted || choice == null) return;
+                  await _applySetting(
+                    (current) => current.copyWith(themeMode: choice),
+                  );
                 },
               ),
               ListTile(
                 title: const Text('Font Style'),
-                subtitle: Text(s.preferredFont),
-                onTap: () async {
-                  final updated = s.copyWith(preferredFont: s.preferredFont == 'Default' ? 'Serif' : 'Default');
-                  await _controller.update(updated);
-                  if (mounted) setState(() => _future = Future.value(updated));
-                },
+                subtitle: Text(
+                  HannamiFonts.resolve(s.preferredFont).preview,
+                  style: HannamiFonts.previewStyle(s.preferredFont, size: 14),
+                ),
+                trailing: Text(
+                  s.preferredFont,
+                  style: HannamiFonts.previewStyle(s.preferredFont, size: 16),
+                ),
+                onTap: _pickFont,
               ),
               const SizedBox(height: 8),
               const Text('Accent Color'),
               const SizedBox(height: 8),
               _ColorPalette(
                 selected: s.accentColor,
-                onSelected: (c) async {
-                  final updated = s.copyWith(accentColor: c);
-                  await _controller.update(updated);
-                  if (mounted) setState(() => _future = Future.value(updated));
-                },
+                onSelected: (c) => _applySetting(
+                  (current) => current.copyWith(accentColor: c),
+                ),
               ),
             ],
           );
         },
       ),
-      bottomNavigationBar: widget.showBottomNav ? HannamiBottomNav(currentRoute: routeName) : null,
+      bottomNavigationBar: widget.showBottomNav
+          ? HannamiBottomNav(currentRoute: routeName)
+          : null,
     );
     if (widget.enableSwipeNav) {
       return SwipeNav(currentRoute: routeName, child: content);
@@ -159,10 +212,7 @@ class _SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
-      child: Text(
-        title,
-        style: Theme.of(context).textTheme.titleMedium,
-      ),
+      child: Text(title, style: Theme.of(context).textTheme.titleMedium),
     );
   }
 }
@@ -192,26 +242,77 @@ class _ColorPalette extends StatelessWidget {
     return Wrap(
       spacing: 12,
       runSpacing: 12,
-      children: _colors.map((c) {
-        final isSelected = c.value == selected.value;
+      children: _colors.map((color) {
+        final isSelected = color == selected;
+        final borderColor = isSelected
+            ? Theme.of(context).colorScheme.onPrimary
+            : Colors.black26;
         return GestureDetector(
-          onTap: () => onSelected(c),
-          child: Container(
-            width: 36,
-            height: 36,
+          onTap: () => onSelected(color),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 180),
+            width: isSelected ? 42 : 36,
+            height: isSelected ? 42 : 36,
             decoration: BoxDecoration(
-              color: c,
+              color: color,
               shape: BoxShape.circle,
-              border: Border.all(
-                color: isSelected ? Colors.white : Colors.black26,
-                width: isSelected ? 3 : 1,
-              ),
-              boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4)],
+              border: Border.all(color: borderColor, width: isSelected ? 3 : 1),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black26,
+                  blurRadius: 4,
+                  offset: Offset(0, 2),
+                ),
+              ],
             ),
-            child: isSelected ? const Icon(Icons.check, size: 20, color: Colors.white) : null,
+            child: isSelected
+                ? const Icon(Icons.check, size: 20, color: Colors.white)
+                : null,
           ),
         );
       }).toList(),
+    );
+  }
+}
+
+class _FontPickerSheet extends StatelessWidget {
+  final String current;
+  const _FontPickerSheet({required this.current});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: ListView.separated(
+        shrinkWrap: true,
+        padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+        itemCount: HannamiFonts.options.length,
+        separatorBuilder: (_, __) => const Divider(height: 1),
+        itemBuilder: (context, index) {
+          final option = HannamiFonts.options[index];
+          final selected = option.name == current;
+          return ListTile(
+            leading: Icon(
+              selected ? Icons.radio_button_checked : Icons.radio_button_off,
+              color: selected
+                  ? Theme.of(context).colorScheme.primary
+                  : Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
+            title: Text(
+              option.name,
+              style: TextStyle(
+                fontFamily: option.family,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            subtitle: Text(
+              option.preview,
+              style: TextStyle(fontFamily: option.family, fontSize: 14),
+            ),
+            onTap: () => Navigator.pop(context, option.name),
+          );
+        },
+      ),
     );
   }
 }

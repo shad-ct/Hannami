@@ -70,6 +70,46 @@ flutter:
   # assets:
   assets:
     - assets/icon.png
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf
+          weight: 700
+    - family: Source Code Pro
+      fonts:
+        - asset: assets/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf
+        - asset: assets/fonts/Source_Code_Pro/static/SourceCodePro-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Source_Code_Pro/static/SourceCodePro-Bold.ttf
+          weight: 700
+    - family: Dancing Script
+      fonts:
+        - asset: assets/fonts/Dancing_Script/static/DancingScript-Regular.ttf
+        - asset: assets/fonts/Dancing_Script/static/DancingScript-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Dancing_Script/static/DancingScript-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Dancing_Script/static/DancingScript-Bold.ttf
+          weight: 700
+    - family: Saira
+      fonts:
+        - asset: assets/fonts/Saira/static/Saira-Regular.ttf
+        - asset: assets/fonts/Saira/static/Saira-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Saira/static/Saira-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Saira/static/Saira-Bold.ttf
+          weight: 700
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico/Pacifico-Regular.ttf
 
 # Launcher icon configuration
 flutter_launcher_icons:

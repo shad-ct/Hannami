@@ -61,6 +61,15 @@ class StorageService {
     return entries;
   }
 
+  Future<void> deleteEntry(String id) async {
+    final file = await _entryFile(id);
+    if (await file.exists()) {
+      try {
+        await file.delete();
+      } catch (_) {}
+    }
+  }
+
   Future<File?> exportEntriesCsv() async {
     final d = await diaryDirectory();
     final entries = await loadEntries();

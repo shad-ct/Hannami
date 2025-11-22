@@ -72,8 +72,16 @@ class _HannamiAppState extends State<HannamiApp> {
     return ValueListenableBuilder<UserSettings>(
       valueListenable: SettingsStore.instance.notifier,
       builder: (_, s, __) {
-        final light = AppTheme.themed(accent: s.accentColor, brightness: Brightness.light);
-        final dark = AppTheme.themed(accent: s.accentColor, brightness: Brightness.dark);
+        final light = AppTheme.themed(
+          accent: s.accentColor,
+          brightness: Brightness.light,
+          preferredFont: s.preferredFont,
+        );
+        final dark = AppTheme.themed(
+          accent: s.accentColor,
+          brightness: Brightness.dark,
+          preferredFont: s.preferredFont,
+        );
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Hannami',

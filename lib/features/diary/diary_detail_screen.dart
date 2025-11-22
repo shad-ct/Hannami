@@ -1,21 +1,68 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:share_plus/share_plus.dart';
-import '../../core/widgets/bottom_nav.dart';
 import '../../models/diary_entry.dart';
 import '../../core/utils/date_utils.dart';
 import 'mood.dart';
 import 'mood_animated.dart';
 import '../../core/services/storage_service.dart';
+import 'diary_editor_screen.dart';
 
-class DiaryDetailScreen extends StatelessWidget {
+class DiaryDetailScreen extends StatefulWidget {
   final DiaryEntry? entry;
   const DiaryDetailScreen({super.key, this.entry});
 
   @override
+  State<DiaryDetailScreen> createState() => _DiaryDetailScreenState();
+}
+
+class _DiaryDetailScreenState extends State<DiaryDetailScreen> {
+  DiaryEntry? _entry;
+  final StorageService _storage = const StorageService();
+
+  @override
+  void initState() {
+    super.initState();
+    _entry = widget.entry;
+  }
+
+  Future<void> _edit() async {
+    final e = _entry;
+    if (e == null) return;
+    final result = await Navigator.push<dynamic>(
+      context,
+      MaterialPageRoute(builder: (_) => DiaryEditorScreen(entry: e)),
+    );
+    if (!mounted) return;
+    if (result is DiaryEntry) {
+      setState(() => _entry = result);
+    } else if (result == 'deleted') {
+      if (mounted) Navigator.pop(context, 'deleted');
+    }
+  }
+
+  Future<void> _delete() async {
+    final e = _entry;
+    if (e == null) return;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Delete Entry'),
+        content: const Text('Delete this entry permanently?'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
+          FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Delete')),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    await _storage.deleteEntry(e.id);
+    if (mounted) Navigator.pop(context, 'deleted');
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final routeName = ModalRoute.of(context)?.settings.name;
-    final e = entry;
+    final e = _entry;
     if (e == null) {
       return Scaffold(
         appBar: AppBar(title: const Text('Diary Detail')),
@@ -23,59 +70,65 @@ class DiaryDetailScreen extends StatelessWidget {
       );
     }
     return Scaffold(
-      appBar: AppBar(title: Text(e.title)),
+      appBar: AppBar(
+        title: Text(e.title),
+        actions: [
+          IconButton(icon: const Icon(Icons.edit), tooltip: 'Edit', onPressed: _edit),
+          IconButton(icon: const Icon(Icons.delete), tooltip: 'Delete', onPressed: _delete),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
         children: [
-          // Images preview section
-            if (e.imagePaths.isNotEmpty) ...[
-              SizedBox(
-                height: 160,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, i) {
-                    final path = e.imagePaths[i];
-                    return GestureDetector(
-                      onTap: () => _showImage(context, path),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(16),
-                        child: Image.file(
-                          File(path),
-                          width: 160,
-                          height: 160,
-                          fit: BoxFit.cover,
-                        ),
+          if (e.imagePaths.isNotEmpty) ...[
+            SizedBox(
+              height: 160,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, i) {
+                  final path = e.imagePaths[i];
+                  return GestureDetector(
+                    onTap: () => _showImage(context, path),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                      child: Image.file(
+                        File(path),
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
                       ),
-                    );
-                  },
-                  separatorBuilder: (_, __) => const SizedBox(width: 12),
-                  itemCount: e.imagePaths.length,
-                ),
+                    ),
+                  );
+                },
+                separatorBuilder: (_, __) => const SizedBox(width: 12),
+                itemCount: e.imagePaths.length,
               ),
-              const SizedBox(height: 16),
-            ],
+            ),
+            const SizedBox(height: 16),
+          ],
           Text(e.title, style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
-          Wrap(
-            spacing: 16,
-            runSpacing: 8,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Tooltip(
                 message: moodByKey(e.mood).description,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    MoodEmojiAnimated(emoji: moodByKey(e.mood).emoji, animate: true, size: 22),
-                    const SizedBox(width: 4),
-                    Text(moodByKey(e.mood).name, style: const TextStyle(fontSize: 13)),
+                    MoodEmojiAnimated(emoji: moodByKey(e.mood).emoji, animate: true, size: 24),
+                    const SizedBox(width: 6),
+                    Text(moodByKey(e.mood).name, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
                   ],
                 ),
               ),
+              const SizedBox(width: 20),
               _iconText(Icons.calendar_month, DateUtilsExt.friendly(e.dateTime)),
-              if (e.placeName != null && e.placeName!.isNotEmpty)
-                _iconText(Icons.place, e.placeName!),
+              const SizedBox(width: 20),
               if (e.tags.isNotEmpty)
-                _iconText(Icons.label, e.tags.join(', ')),
+                Expanded(
+                  child: _iconText(Icons.label, e.tags.join(', ')),
+                ),
             ],
           ),
           const SizedBox(height: 16),

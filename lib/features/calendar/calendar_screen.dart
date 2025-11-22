@@ -7,7 +7,11 @@ import 'calendar_controller.dart';
 class CalendarScreen extends StatefulWidget {
   final bool showBottomNav;
   final bool enableSwipeNav;
-  const CalendarScreen({super.key, this.showBottomNav = true, this.enableSwipeNav = true});
+  const CalendarScreen({
+    super.key,
+    this.showBottomNav = true,
+    this.enableSwipeNav = true,
+  });
 
   @override
   State<CalendarScreen> createState() => _CalendarScreenState();
@@ -25,6 +29,21 @@ class _CalendarScreenState extends State<CalendarScreen> {
     _future = _controller.loadAll();
   }
 
+  void _reloadEntries({DateTime? highlightDay}) {
+    setState(() {
+      _future = _controller.loadAll();
+      if (highlightDay != null) {
+        final normalized = DateTime(
+          highlightDay.year,
+          highlightDay.month,
+          highlightDay.day,
+        );
+        _selectedDay = normalized;
+        _visibleMonth = DateTime(highlightDay.year, highlightDay.month);
+      }
+    });
+  }
+
   void _goMonth(int delta) {
     setState(() {
       _visibleMonth = DateTime(_visibleMonth.year, _visibleMonth.month + delta);
@@ -35,7 +54,11 @@ class _CalendarScreenState extends State<CalendarScreen> {
     final first = DateTime(_visibleMonth.year, _visibleMonth.month, 1);
     final firstWeekday = first.weekday; // 1=Mon .. 7=Sun
     final startOffset = firstWeekday % 7; // convert so Sunday=0
-    final daysInMonth = DateTime(_visibleMonth.year, _visibleMonth.month + 1, 0).day;
+    final daysInMonth = DateTime(
+      _visibleMonth.year,
+      _visibleMonth.month + 1,
+      0,
+    ).day;
     final list = <DateTime>[];
     for (int i = 0; i < startOffset; i++) {
       list.add(first.subtract(Duration(days: startOffset - i)));
@@ -56,8 +79,14 @@ class _CalendarScreenState extends State<CalendarScreen> {
       appBar: AppBar(
         title: const Text('Calendar'),
         actions: [
-          IconButton(onPressed: () => _goMonth(-1), icon: const Icon(Icons.chevron_left)),
-          IconButton(onPressed: () => _goMonth(1), icon: const Icon(Icons.chevron_right)),
+          IconButton(
+            onPressed: () => _goMonth(-1),
+            icon: const Icon(Icons.chevron_left),
+          ),
+          IconButton(
+            onPressed: () => _goMonth(1),
+            icon: const Icon(Icons.chevron_right),
+          ),
         ],
       ),
       body: FutureBuilder<List<DiaryEntry>>(
@@ -71,7 +100,12 @@ class _CalendarScreenState extends State<CalendarScreen> {
           final days = _monthDays();
           final selectedEntries = _selectedDay == null
               ? <DiaryEntry>[]
-              : grouped[DateTime(_selectedDay!.year, _selectedDay!.month, _selectedDay!.day)] ?? const [];
+              : grouped[DateTime(
+                      _selectedDay!.year,
+                      _selectedDay!.month,
+                      _selectedDay!.day,
+                    )] ??
+                    const [];
           return Column(
             children: [
               AspectRatio(
@@ -90,12 +124,19 @@ class _CalendarScreenState extends State<CalendarScreen> {
                     final isCurrentMonth = day.month == _visibleMonth.month;
                     final dayKey = DateTime(day.year, day.month, day.day);
                     final hasEntries = grouped.containsKey(dayKey);
-                    final isSelected = _selectedDay != null && dayKey == DateTime(_selectedDay!.year, _selectedDay!.month, _selectedDay!.day);
+                    final isSelected =
+                        _selectedDay != null &&
+                        dayKey ==
+                            DateTime(
+                              _selectedDay!.year,
+                              _selectedDay!.month,
+                              _selectedDay!.day,
+                            );
                     final color = isSelected
                         ? Colors.blueAccent
                         : hasEntries
-                            ? Colors.blueGrey.shade700
-                            : Colors.white10;
+                        ? Colors.blueGrey.shade700
+                        : Colors.white10;
                     return GestureDetector(
                       onTap: isCurrentMonth
                           ? () => setState(() => _selectedDay = day)
@@ -123,16 +164,57 @@ class _CalendarScreenState extends State<CalendarScreen> {
                 child: selectedEntries.isEmpty
                     ? const Center(child: Text('No entries for selected day'))
                     : ListView.separated(
-                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                        padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
                         itemBuilder: (context, index) {
-                          final e = selectedEntries[index];
-                          return ListTile(
-                            title: Text(e.title),
-                            subtitle: Text(e.content, maxLines: 2, overflow: TextOverflow.ellipsis),
-                            onTap: () => Navigator.pushNamed(context, '/diary-detail', arguments: e),
+                          final entry = selectedEntries[index];
+                          return Card(
+                            margin: EdgeInsets.zero,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14),
+                            ),
+                            elevation: 1.5,
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(14),
+                              onTap: () async {
+                                final result = await Navigator.pushNamed(
+                                  context,
+                                  '/diary-detail',
+                                  arguments: entry,
+                                );
+                                if (!mounted) return;
+                                if (result == 'deleted') {
+                                  _reloadEntries(highlightDay: entry.dateTime);
+                                } else if (result is DiaryEntry) {
+                                  _reloadEntries(highlightDay: result.dateTime);
+                                }
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      entry.title,
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.titleMedium,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      entry.content,
+                                      maxLines: 3,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.bodyMedium,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           );
                         },
-                        separatorBuilder: (_, __) => const SizedBox(height: 4),
+                        separatorBuilder: (_, __) => const SizedBox(height: 14),
                         itemCount: selectedEntries.length,
                       ),
               ),
@@ -140,7 +222,9 @@ class _CalendarScreenState extends State<CalendarScreen> {
           );
         },
       ),
-      bottomNavigationBar: widget.showBottomNav ? HannamiBottomNav(currentRoute: routeName) : null,
+      bottomNavigationBar: widget.showBottomNav
+          ? HannamiBottomNav(currentRoute: routeName)
+          : null,
     );
     if (widget.enableSwipeNav) {
       return SwipeNav(currentRoute: routeName, child: content);
@@ -148,4 +232,3 @@ class _CalendarScreenState extends State<CalendarScreen> {
     return content;
   }
 }
-
