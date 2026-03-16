@@ -43,7 +43,6 @@ Hannami is built using:
 - **Flutter**
 - **Dart**
 - **Material You design principles**
-
 ---
 
 ## 🚀 Getting Started (Development Build)
