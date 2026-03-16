@@ -35,7 +35,8 @@ Designed for mindfulness and emotional clarity, wrapped in a soothing and custom
 ## 📦 Download
 The latest APK can be downloaded from the **Releases** page:
 
-🔗 [Download now](https://github.com/shad-ct/Hannami/releases/download/v1.0.0/Hannami.apk)
+[![Download APK](https://static.vecteezy.com/system/resources/previews/017/273/635/non_2x/download-button-icon-illustration-vector.jpg)](https://github.com/shad-ct/Hannami/releases/download/v1.0.1/app-release.apk)
+
 ---
 
 ## 🧰 Tech Stack
