@@ -42,6 +42,7 @@ dependencies:
   share_plus: ^10.0.2
   file_selector: ^1.0.3
   geocoding: ^3.0.0
+  audioplayers: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,8 @@ flutter:
   # assets:
   assets:
     - assets/icon.png
+    - assets/Ding Sound Effect.mp3
+    - lib/models/prompts.json
   fonts:
     - family: Playfair Display
       fonts:

@@ -29,6 +29,11 @@ class HannamiBottomNav extends StatelessWidget {
           label: 'Media',
         ),
         NavigationDestination(
+          icon: Icon(Icons.auto_awesome_outlined),
+          selectedIcon: Icon(Icons.auto_awesome),
+          label: 'Prompts',
+        ),
+        NavigationDestination(
           icon: Icon(Icons.settings),
           label: 'Settings',
         ),

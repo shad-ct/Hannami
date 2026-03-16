@@ -3,6 +3,7 @@ import '../core/widgets/bottom_nav.dart';
 import '../features/home/home_screen.dart';
 import '../features/calendar/calendar_screen.dart';
 import '../features/media/media_screen.dart';
+import '../features/prompts/prompts_screen.dart';
 import '../features/settings/settings_screen.dart';
 
 class MainShell extends StatefulWidget {
@@ -32,6 +33,7 @@ class _MainShellState extends State<MainShell> {
           HomeScreen(showBottomNav: false, enableSwipeNav: false),
           CalendarScreen(showBottomNav: false, enableSwipeNav: false),
           MediaScreen(showBottomNav: false, enableSwipeNav: false),
+          PromptsScreen(showBottomNav: false),
           SettingsScreen(showBottomNav: false, enableSwipeNav: false),
         ],
       ),

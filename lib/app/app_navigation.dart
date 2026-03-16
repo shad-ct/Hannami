@@ -9,7 +9,8 @@ class AppNavigation {
       0 => AppRoutes.home,
       1 => AppRoutes.calendar,
       2 => AppRoutes.media,
-      3 => AppRoutes.settings,
+      3 => AppRoutes.prompts,
+      4 => AppRoutes.settings,
       _ => AppRoutes.home,
     };
     final currentName = ModalRoute.of(context)?.settings.name;
@@ -44,7 +45,8 @@ class AppNavigation {
       AppRoutes.home => 0,
       AppRoutes.calendar => 1,
       AppRoutes.media => 2,
-      AppRoutes.settings => 3,
+      AppRoutes.prompts => 3,
+      AppRoutes.settings => 4,
       _ => 0,
     };
   }

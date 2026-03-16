@@ -1,0 +1,3002 @@
+[
+    {
+        "id": 1,
+        "question": "What is one thing you’ve learned about yourself in the last 30 days that surprised you?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 2,
+        "question": "Name three small, often overlooked moments from today that brought you a genuine sense of peace.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 3,
+        "question": "If you could master any new skill this year without the fear of failure, what would it be and why?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 4,
+        "question": "Describe the physical sensations in your body right now from head to toe without assigning judgment to them.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 5,
+        "question": "What specific boundaries do you need to set this week to better protect your mental energy?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 6,
+        "question": "How do you typically show love to others, and is that the same way you prefer to receive it?",
+        "type": "Relationships"
+    },
+    {
+        "id": 7,
+        "question": "Identify the biggest \"time-drain\" in your current daily routine. What is one actionable step to minimize it?",
+        "type": "Productivity"
+    },
+    {
+        "id": 8,
+        "question": "Write a short letter to yourself five years from now, describing what an ideal average Tuesday looks like.",
+        "type": "Future"
+    },
+    {
+        "id": 9,
+        "question": "Which historical figure or contemporary leader inspires you most, and which of their traits do you see in yourself?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 10,
+        "question": "If you had to express your current mood using only colors, textures, and shapes, what would the canvas look like?",
+        "type": "Creativity"
+    },
+    {
+        "id": 11,
+        "question": "What does \"being healthy\" mean to you personally, beyond just physical appearance or weight?",
+        "type": "Health"
+    },
+    {
+        "id": 12,
+        "question": "If all your financial needs were permanently met, what kind of work would you choose to do for the world?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 13,
+        "question": "Reflect on an emotion you have been avoiding recently. Why does it feel unsafe to acknowledge it?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 14,
+        "question": "What was your favorite place to hide or play as a child, and what did that space represent to you?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 15,
+        "question": "Reflect on a recent failure. What did that experience reveal to you about your inner resilience?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 16,
+        "question": "What is one specific, small action you can take today to make someone else's life slightly easier?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 17,
+        "question": "What is a personality trait you dislike in others that you might actually possess yourself?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 18,
+        "question": "Think of a difficult choice you made recently. Which of your core values ultimately guided your decision?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 19,
+        "question": "How can you use your unique talents to contribute to a cause you care about in your local community?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 20,
+        "question": "List your top three non-negotiable life values. How did your actions this week align with them?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 21,
+        "question": "What is your earliest memory related to money, and how does it still influence your spending habits today?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 22,
+        "question": "Look around your current room. What one physical change would make this space feel more like a sanctuary?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 23,
+        "question": "What is something you believe in deeply that cannot be proven by science or logic?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 24,
+        "question": "How do you typically react to silence? Do you seek to fill it, or do you find comfort in it?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 25,
+        "question": "What is one thing your body does for you every day that you often take for granted?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 26,
+        "question": "What is a \"limiting belief\" you hold about your abilities, and what evidence exists to disprove it?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 27,
+        "question": "Practice a \"five senses\" check-in right now: what are 5 things you see, 4 you feel, 3 you hear, 2 you smell, and 1 you taste?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 28,
+        "question": "Describe what your \"inner critic\" sounds like. What is one compassionate response you can offer it today?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 29,
+        "question": "Who in your life makes you feel the most seen and understood? What do they do to create that feeling?",
+        "type": "Relationships"
+    },
+    {
+        "id": 30,
+        "question": "How do you distinguish between being \"busy\" and being \"effective\"? Which were you today?",
+        "type": "Productivity"
+    },
+    {
+        "id": 31,
+        "question": "If you were guaranteed success in any endeavor, what risk would you take by this time tomorrow?",
+        "type": "Future"
+    },
+    {
+        "id": 32,
+        "question": "What book, movie, or piece of art has most significantly shifted your perspective on life?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 33,
+        "question": "Write a short scene where a character discovers a mysterious object in an ordinary place.",
+        "type": "Creativity"
+    },
+    {
+        "id": 34,
+        "question": "How does your physical energy level correlate with the types of food you've eaten over the last 48 hours?",
+        "type": "Health"
+    },
+    {
+        "id": 35,
+        "question": "What does professional \"success\" look like to you in this current stage of your life?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 36,
+        "question": "Describe a time you felt profoundly misunderstood. What do you wish the other person had known?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 37,
+        "question": "What was a family tradition from your youth that you’ve either kept or consciously let go of?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 38,
+        "question": "Think of a time you had to be \"brave.\" What did bravery look like in that specific moment?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 39,
+        "question": "What is the primary intention you want to set for your interactions with others today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 40,
+        "question": "What is a secret desire or ambition you’ve been afraid to admit to yourself because it feels \"silly\" or \"impossible\"?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 41,
+        "question": "When faced with a major decision, do you rely more on data and logic or your \"gut feeling\"? Why?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 42,
+        "question": "In what ways do you feel a sense of belonging within your current social or professional circles?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 43,
+        "question": "If you had to choose one virtue to be remembered for, which would it be and why?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 44,
+        "question": "What does \"financial freedom\" mean to you in terms of both a specific number and a lifestyle?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 45,
+        "question": "How does the amount of natural light in your home or workspace affect your mood and focus?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 46,
+        "question": "Where or when do you feel a sense of \"awe\" or connection to something much larger than yourself?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 47,
+        "question": "What are three words you would use to describe yourself to a complete stranger, and why those three?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 48,
+        "question": "Write about a person you don't know well but whose presence or work you are grateful for.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 49,
+        "question": "What habit, if practiced for just 10 minutes a day, would have the biggest positive impact on your life?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 50,
+        "question": "Close your eyes and listen to the furthest sound you can hear. Describe it in detail.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 51,
+        "question": "What are your \"early warning signs\" that you are approaching burnout or emotional exhaustion?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 52,
+        "question": "Reflect on a past friendship that ended. What did that relationship teach you about your needs?",
+        "type": "Relationships"
+    },
+    {
+        "id": 53,
+        "question": "What does your ideal \"deep work\" environment look like? What tools or sounds help you focus?",
+        "type": "Productivity"
+    },
+    {
+        "id": 54,
+        "question": "What is one legacy—tangible or intangible—that you hope to leave for the next generation?",
+        "type": "Future"
+    },
+    {
+        "id": 55,
+        "question": "Which specific quote or mantra do you return to when you need a boost of courage?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 56,
+        "question": "If you could redesign your morning routine as if it were a performance art piece, how would it flow?",
+        "type": "Creativity"
+    },
+    {
+        "id": 57,
+        "question": "How do you distinguish between your body's physical hunger and its emotional hunger?",
+        "type": "Health"
+    },
+    {
+        "id": 58,
+        "question": "What is a professional skill you possess that you often undervalue? How can you use it more intentionally?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 59,
+        "question": "Locate a place in your body where you feel tension. If that tension had a voice, what would it be saying?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 60,
+        "question": "What is a smell or sound that instantly transports you back to your childhood? Describe the memory.",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 61,
+        "question": "What is a \"silver lining\" you’ve found in a difficult situation you've faced in the last six months?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 62,
+        "question": "What is one thing you will say \"no\" to today in order to protect your time and energy?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 63,
+        "question": "What part of your personality do you find yourself hiding when you meet someone for the first time?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 64,
+        "question": "Think of a time you ignored your intuition. What were the consequences, and what did you learn?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 65,
+        "question": "What is one social or community issue that you feel a personal responsibility to help solve?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 66,
+        "question": "Is it more important to be liked or to be respected? How has this belief influenced your life?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 67,
+        "question": "How does your current relationship with money compare to the way your parents handled finances?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 68,
+        "question": "What is your favorite corner of your home and why? How does it reflect your personality?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 69,
+        "question": "How do you define the difference between \"spirituality\" and \"religion\" based on your own experience?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 70,
+        "question": "What is a question you wish someone would ask you right now, and how would you answer it?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 71,
+        "question": "Describe a time a stranger was unexpectedly kind to you. How did it change your day?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 72,
+        "question": "If you could go back and give your 18-year-old self one piece of advice, what would it be?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 73,
+        "question": "Spend five minutes eating a piece of fruit or a snack very slowly. What new textures do you notice?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 74,
+        "question": "Write a \"permission slip\" to yourself to do something you’ve been feeling guilty about avoiding.",
+        "type": "Mental Health"
+    },
+    {
+        "id": 75,
+        "question": "What does \"trust\" look like in a partnership to you? How is it built and how is it maintained?",
+        "type": "Relationships"
+    },
+    {
+        "id": 76,
+        "question": "What is your \"peak\" time of day for mental clarity, and how can you better protect that window?",
+        "type": "Productivity"
+    },
+    {
+        "id": 77,
+        "question": "What are three specific things you want to experience or achieve before your next birthday?",
+        "type": "Future"
+    },
+    {
+        "id": 78,
+        "question": "Who is the most resilient person you know personally? What specific behaviors do they exhibit?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 79,
+        "question": "How can you inject a sense of playfulness or \"unproductive fun\" into your work tasks today?",
+        "type": "Creativity"
+    },
+    {
+        "id": 80,
+        "question": "How do you feel physically and mentally after a day of nourishing your body versus a day of neglect?",
+        "type": "Health"
+    },
+    {
+        "id": 81,
+        "question": "What is a professional \"mountain\" you are currently climbing? What does the summit look like?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 82,
+        "question": "Write about a time you felt a complex mixture of two opposite emotions at once (e.g., joy and grief).",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 83,
+        "question": "What did you want to be when you grew up, and is that child's dream still alive in you in some way?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 84,
+        "question": "What is a mantra or short phrase that helps you navigate through your most difficult days?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 85,
+        "question": "How will you practice self-compassion today if things don't go according to your plan?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 86,
+        "question": "What is a habit or behavior you have that serves as a defense mechanism? What is it protecting you from?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 87,
+        "question": "To what extent do you weigh other people's opinions when making a choice that affects only you?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 88,
+        "question": "How do you contribute to the \"culture\" of your workplace, home, or friend group?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 89,
+        "question": "If you could change one thing about the ethical standards of the world today, what would it be?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 90,
+        "question": "If you received $10,000 today with no strings attached, what is the first thing you would do with it?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 91,
+        "question": "Look at an object in your room that has no sentimental value. Why do you still own it?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 92,
+        "question": "Describe a moment where you felt a deep sense of internal peace. Where were you and what were you doing?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 93,
+        "question": "What is a compliment you find particularly hard to accept? Why do you think that is?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 94,
+        "question": "List five things in your current physical environment that you usually take for granted.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 95,
+        "question": "What is a hobby or interest you gave up in the past that you wish you hadn't? What's stopping you from restarting?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 96,
+        "question": "Observe your breath for two minutes. Does its rhythm change when you focus on it? Describe the flow.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 97,
+        "question": "How do you typically recharge when you feel socially or emotionally overstimulated?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 98,
+        "question": "What is a hard conversation you've been putting off? What is the one thing you most need to say?",
+        "type": "Relationships"
+    },
+    {
+        "id": 99,
+        "question": "If you could create a new holiday, what would it celebrate and what would the traditions be?",
+        "type": "Creativity"
+    },
+    {
+        "id": 100,
+        "question": "Write a letter of forgiveness to yourself for a mistake you made more than a year ago.",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 101,
+        "question": "What part of your identity is most influenced by your profession, and how do you feel about that connection?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 102,
+        "question": "Identify a modern convenience you use daily that you often forget is a luxury. Why are you thankful for it?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 103,
+        "question": "Name one fear you faced this month, however small. How did your perspective change after addressing it?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 104,
+        "question": "Focus on your breathing for one minute. Describe the temperature of the air as it enters and leaves your nostrils.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 105,
+        "question": "What does \"safety\" feel like in your body? Describe the physical sensations of being completely secure.",
+        "type": "Mental Health"
+    },
+    {
+        "id": 106,
+        "question": "If your closest friend were to describe your best quality in one sentence, what do you think they would say?",
+        "type": "Relationships"
+    },
+    {
+        "id": 107,
+        "question": "What is the very first thing you do when you feel overwhelmed by a mounting to-do list? Is it helpful or harmful?",
+        "type": "Productivity"
+    },
+    {
+        "id": 108,
+        "question": "What is one specific problem you are currently facing that you hope to have completely solved by this time next year?",
+        "type": "Future"
+    },
+    {
+        "id": 109,
+        "question": "Think of the most beautiful thing you saw today. What made it stand out to you in that moment?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 110,
+        "question": "Make a list of ten objects that are traditionally blue, then describe what they would look like if they were vibrant orange.",
+        "type": "Creativity"
+    },
+    {
+        "id": 111,
+        "question": "Reflect on your relationship with sleep. How does the quality of your rest directly correlate to your emotional patience?",
+        "type": "Health"
+    },
+    {
+        "id": 112,
+        "question": "If you could change one thing about your current work environment to increase your happiness, what would it be?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 113,
+        "question": "Recall a recent time you felt jealous. What was that jealousy trying to tell you about your own unmet needs?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 114,
+        "question": "What was the most sought-after toy or item when you were ten years old? Did you ever get it, and how did it feel?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 115,
+        "question": "Think about a time you were \"the new person\" in a group. How did you navigate the discomfort of not belonging yet?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 116,
+        "question": "Choose one word to define your actions for the rest of the day. How will this word guide your choices?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 117,
+        "question": "What is a specific quality you deeply admire in others but feel you lack in yourself? How can you cultivate it?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 118,
+        "question": "When was the last time you changed your mind about a deeply held belief? What new information triggered that shift?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 119,
+        "question": "How do you define \"neighborliness\" in the digital age? Are you practicing it in your online interactions?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 120,
+        "question": "In your opinion, is it ever ethical to lie to protect someone’s feelings? Why or why not?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 121,
+        "question": "What does the concept of \"financial enoughness\" look like to you? Define the point where your needs are met.",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 122,
+        "question": "If your current home was a living person, what would their personality be like and what would they say to you?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 123,
+        "question": "How do you emotionally and mentally handle situations that are completely outside of your control?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 124,
+        "question": "What is a piece of advice you often give to others but find incredibly difficult to follow yourself?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 125,
+        "question": "Write about a mentor or teacher who believed in you before you believed in yourself. What did they see?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 126,
+        "question": "If you were to start a \"growth journal,\" what are the first three milestones you would want to track?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 127,
+        "question": "Stop and notice the lighting in the room. How does the quality of the light affect your current state of mind?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 128,
+        "question": "Describe a personal boundary you’ve recently strengthened. How has your life improved since doing so?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 129,
+        "question": "Think of a person you find difficult to be around. What is one thing you have in common with them?",
+        "type": "Relationships"
+    },
+    {
+        "id": 130,
+        "question": "What is one recurring task you perform that feels like a waste of time? Can it be automated, delegated, or deleted?",
+        "type": "Productivity"
+    },
+    {
+        "id": 131,
+        "question": "If you could witness one specific event in your own future, which one would it be, and would you want to know the outcome?",
+        "type": "Future"
+    },
+    {
+        "id": 132,
+        "question": "What is the most inspiring conversation you’ve had in the last year? What was the key takeaway?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 133,
+        "question": "Imagine you are writing a story about a library where the books are actually people's memories. Which memory would you donate?",
+        "type": "Creativity"
+    },
+    {
+        "id": 134,
+        "question": "What is your body trying to tell you right now? Listen closely and translate its signals into words.",
+        "type": "Health"
+    },
+    {
+        "id": 135,
+        "question": "What is one professional risk you’ve taken that didn't pay off? What did you gain from the experience regardless?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 136,
+        "question": "Write about a time you felt a deep sense of shame. If you could wrap that younger version of yourself in a hug, what would you say?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 137,
+        "question": "What was the first \"grown-up\" responsibility you were ever given? How did it make you feel at the time?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 138,
+        "question": "Reflect on a period of your life where you felt \"stuck.\" What was the catalyst that finally moved you forward?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 139,
+        "question": "What is one thing you can do today to prepare for a successful and stress-free tomorrow morning?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 140,
+        "question": "Identify a trait in yourself that you often apologize for. Is it truly a flaw, or just something others have judged?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 141,
+        "question": "When faced with multiple good options, how do you determine which one is the \"best\" for your current season of life?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 142,
+        "question": "What is a systemic issue in your community that you wish more people were talking about? Why does it matter to you?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 143,
+        "question": "How do you react when you see someone else being treated unfairly? Does your reaction align with your internal values?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 144,
+        "question": "What is your biggest fear regarding your financial future, and what is one small step you can take to mitigate it?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 145,
+        "question": "How does clutter in your physical space reflect or influence the clutter in your mental space?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 146,
+        "question": "Do you believe everything happens for a reason, or do we create our own meaning from random events? Explain.",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 147,
+        "question": "What is a personal mystery about yourself that you are still trying to solve or understand?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 148,
+        "question": "Name a song that always lifts your spirits. What specific memory or feeling is attached to its melody?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 149,
+        "question": "What is the most constructive piece of criticism you’ve ever received? How did it help you grow?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 150,
+        "question": "Close your eyes and focus on the sensation of your clothes against your skin. Which fabric feels most comforting?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 151,
+        "question": "How do you distinguish between a healthy desire for self-improvement and an unhealthy obsession with perfection?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 152,
+        "question": "What does \"loyalty\" mean to you in a friendship? When was a time that loyalty was tested?",
+        "type": "Relationships"
+    },
+    {
+        "id": 153,
+        "question": "What is the \"low-hanging fruit\" in your life right now—the easiest thing you could change for an immediate win?",
+        "type": "Productivity"
+    },
+    {
+        "id": 154,
+        "question": "If you could change the course of your life by making one different choice five years ago, what would it be?",
+        "type": "Future"
+    },
+    {
+        "id": 155,
+        "question": "Reflect on a quote from a fictional character that resonates with your current life situation.",
+        "type": "Inspiration"
+    },
+    {
+        "id": 156,
+        "question": "If you were to paint your current state of mind using only abstract shapes, which shape would be most prominent?",
+        "type": "Creativity"
+    },
+    {
+        "id": 157,
+        "question": "How does your relationship with technology (scrolling, notifications) affect your physical well-being?",
+        "type": "Health"
+    },
+    {
+        "id": 158,
+        "question": "What is a dream project you would love to lead at work if there were no budget or time constraints?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 159,
+        "question": "Write about a time you felt profoundly lonely even while being in a crowd. What was missing?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 160,
+        "question": "What is a game you played as a child that you wish was still socially acceptable for adults to play?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 161,
+        "question": "Describe a time you had to stand up for yourself against someone in a position of power.",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 162,
+        "question": "What is one kind word you can say to yourself every time you look in the mirror today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 163,
+        "question": "What is a part of yourself that you often judge in others? How can you show that part of yourself more mercy?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 164,
+        "question": "Think about a major life transition you are currently in. What are you deciding to leave behind?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 165,
+        "question": "How does your lifestyle impact the environment? What is one small change you could make to be more sustainable?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 166,
+        "question": "If you had to write a code of ethics for your future children or family, what would be the first rule?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 167,
+        "question": "What is a luxury you currently enjoy that you would be most willing to give up to save money?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 168,
+        "question": "How does the organization (or lack thereof) of your kitchen affect your relationship with food?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 169,
+        "question": "Where do you find a sense of sacredness in your everyday, mundane routine?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 170,
+        "question": "What is the most significant way you have changed in the last five years? Are you happy with this change?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 171,
+        "question": "Identify a specific skill you have that makes your life easier. Write a thank-you note to the person who taught it to you.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 172,
+        "question": "What is a \"rule\" you’ve been following that you didn't actually agree to? What happens if you break it?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 173,
+        "question": "Spend three minutes focusing solely on the sounds occurring outside of the building you are in.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 174,
+        "question": "What does \"mental rest\" look like for you? It is different from physical rest?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 175,
+        "question": "Recall a time you forgave someone who didn't apologize. How did that act of forgiveness feel for you?",
+        "type": "Relationships"
+    },
+    {
+        "id": 176,
+        "question": "What is your relationship with your inbox? Does it control you, or do you control it?",
+        "type": "Productivity"
+    },
+    {
+        "id": 177,
+        "question": "If you could design a dream vacation for your future self, where would you go and who would be with you?",
+        "type": "Future"
+    },
+    {
+        "id": 178,
+        "question": "Think of a person who is doing work that makes the world a better place. How can you support them?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 179,
+        "question": "If you were to create a new species of plant, what would it look like and what environment would it thrive in?",
+        "type": "Creativity"
+    },
+    {
+        "id": 180,
+        "question": "What is one physical activity that makes you feel powerful and connected to your body?",
+        "type": "Health"
+    },
+    {
+        "id": 181,
+        "question": "Describe a professional achievement you are proud of that no one else really knows about.",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 182,
+        "question": "How do you handle disappointment? Do you tend to ruminate on it or move on quickly?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 183,
+        "question": "What was a favorite meal your parents or guardians made for you as a child? Describe the taste and smell.",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 184,
+        "question": "Think of a time you failed at something you practiced for a long time. How did you handle the aftermath?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 185,
+        "question": "What is one small way you can be more present during your meals today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 186,
+        "question": "Which of your negative self-beliefs feels the most \"true\"? Why are you so convinced of its accuracy?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 187,
+        "question": "Reflect on a decision you made out of fear. How would that decision have looked if you had made it out of love?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 188,
+        "question": "In what ways do you see yourself as a leader within your community, even in an informal capacity?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 189,
+        "question": "What is a moral dilemma you have faced recently? How did you resolve it?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 190,
+        "question": "How does your sense of self-worth fluctuate based on your financial status or bank balance?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 191,
+        "question": "If you could add one room to your house that was dedicated solely to a specific hobby, what would it be?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 192,
+        "question": "What does the word \"grace\" mean to you in the context of your own spiritual or personal beliefs?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 193,
+        "question": "If you were a character in a book, what would be your \"fatal flaw\" and your greatest strength?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 194,
+        "question": "Identify three people in your life who have taught you something valuable by being a \"bad example.\"",
+        "type": "Gratitude"
+    },
+    {
+        "id": 195,
+        "question": "What is a goal you have that feels \"too big\" to tell anyone else? Why does it feel that way?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 196,
+        "question": "Notice the way your feet feel inside your shoes or against the floor. Focus on the points of contact.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 197,
+        "question": "Describe your \"emotional first aid kit\"—the things you do to soothe yourself when you are hurting.",
+        "type": "Mental Health"
+    },
+    {
+        "id": 198,
+        "question": "How do you handle conflict in your closest relationship? Do you tend to approach or avoid it?",
+        "type": "Relationships"
+    },
+    {
+        "id": 199,
+        "question": "What is one thing you’ve seen recently that sparked a sense of curiosity in you? How can you explore it?",
+        "type": "Creativity"
+    },
+    {
+        "id": 200,
+        "question": "Reflect on a time you felt a deep sense of regret. What would it take for you to finally let that go?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 201,
+        "question": "What is one question you are currently asking yourself that doesn't have an immediate answer?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 202,
+        "question": "Identify a specific technology or tool that makes your life significantly easier. How does it save you time?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 203,
+        "question": "What is a piece of advice you ignored in the past but now realize was incredibly wise?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 204,
+        "question": "Focus on your posture right now. Without changing it immediately, where do you feel the most weight or pressure?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 205,
+        "question": "Describe a 'safe space' in your mind. What does it look like, smell like, and feel like when you visit it?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 206,
+        "question": "How do you handle it when someone you love has a different political or social viewpoint than you?",
+        "type": "Relationships"
+    },
+    {
+        "id": 207,
+        "question": "What is the '80/20' of your life—the 20% of activities that result in 80% of your happiness or success?",
+        "type": "Productivity"
+    },
+    {
+        "id": 208,
+        "question": "If you could receive a message from yourself ten years in the future, what warning or encouragement would you hope for?",
+        "type": "Future"
+    },
+    {
+        "id": 209,
+        "question": "Think of a person who has achieved something you desire. What can you learn from their journey without falling into comparison?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 210,
+        "question": "If you had to write a poem about the color of your favorite childhood memory, what words would you use?",
+        "type": "Creativity"
+    },
+    {
+        "id": 211,
+        "question": "How does your body feel when you haven't moved it enough during the day? Describe the lethargy or tension.",
+        "type": "Health"
+    },
+    {
+        "id": 212,
+        "question": "What is one 'bridge' you are glad you burned in your career, and how did it lead you to a better path?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 213,
+        "question": "Describe a time you felt 'imposter syndrome.' What was the underlying fear, and how did you push through?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 214,
+        "question": "What was the most significant 'lesson learned the hard way' from your teenage years?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 215,
+        "question": "Think about a difficult person you've had to work with. What did the experience teach you about your own patience?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 216,
+        "question": "What is one way you can be 10% more kind to yourself today than you were yesterday?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 217,
+        "question": "What is a 'weakness' of yours that, in a different context, could actually be seen as a hidden strength?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 218,
+        "question": "Think of a time you said 'yes' when you really wanted to say 'no.' What was the cost of that decision?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 219,
+        "question": "In what ways do you feel responsible for the well-being of your local community?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 220,
+        "question": "If you were the leader of a country, what is the first ethical law you would implement to ensure fairness?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 221,
+        "question": "What is your philosophy on 'saving for a rainy day' versus 'living for today'?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 222,
+        "question": "How does the cleanliness of your car or bag impact your overall sense of order in life?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 223,
+        "question": "What is one ritual or practice that helps you feel grounded when the world feels chaotic?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 224,
+        "question": "What is a compliment you've received that felt like it truly touched your soul?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 225,
+        "question": "Write about a piece of clothing you own that makes you feel confident every time you wear it.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 226,
+        "question": "What is a book you’ve read that you feel everyone should read at least once in their life?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 227,
+        "question": "Close your eyes and try to identify three different distinct smells in your current environment.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 228,
+        "question": "How do you distinguish between your own needs and the expectations others have for you?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 229,
+        "question": "What is the most 'vulnerable' thing you’ve shared with someone recently? How did they react?",
+        "type": "Relationships"
+    },
+    {
+        "id": 230,
+        "question": "What is your 'morning win'—the one thing that, if done, makes the rest of the day feel successful?",
+        "type": "Productivity"
+    },
+    {
+        "id": 231,
+        "question": "If you were to write your autobiography, what would the title of the current chapter be?",
+        "type": "Future"
+    },
+    {
+        "id": 232,
+        "question": "What is a YouTube video or podcast episode that profoundly changed your way of thinking?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 233,
+        "question": "If you could design a new logo for your life, what symbols and colors would it include?",
+        "type": "Creativity"
+    },
+    {
+        "id": 234,
+        "question": "How do you feel after spending time in nature compared to spending time in a crowded city?",
+        "type": "Health"
+    },
+    {
+        "id": 235,
+        "question": "What does 'work-life balance' actually look like to you, practically speaking, on a Tuesday?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 236,
+        "question": "Recall a time you were angry and later realized the anger was covering up a different emotion. What was it?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 237,
+        "question": "What was the first album or song you ever bought with your own money? What memories does it evoke?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 238,
+        "question": "Think about a time you had to 'start over.' What was the most difficult part of that transition?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 239,
+        "question": "What is one 'open loop' (unfinished task) you can close today to free up mental energy?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 240,
+        "question": "What is a 'toxic' trait you see in others that you are secretly afraid you also exhibit?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 241,
+        "question": "How do you handle 'choice paralysis' when you have too many options available?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 242,
+        "question": "What is one way your local community has supported you in the past, and how can you pay it forward?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 243,
+        "question": "If you found a wallet with $100 and no ID, what would you honestly do with the money?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 244,
+        "question": "What is your 'money script'—the subconscious belief about money that you learned from your family?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 245,
+        "question": "If you could change the view out of your bedroom window to any place in the world, where would it be?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 246,
+        "question": "How do you define 'purpose'? Do you feel you have found yours, or are you still searching?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 247,
+        "question": "If you were to write a letter to your 'shadow self,' what would you want to thank it for?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 248,
+        "question": "Identify a person in your life who always makes you laugh. What is it about their humor that you appreciate?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 249,
+        "question": "What is one thing you’ve been 'saving for a special occasion' that you could use or enjoy today?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 250,
+        "question": "Observe the rhythm of your heart for one minute. Is it fast, slow, or steady? What does that tell you?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 251,
+        "question": "What are three things you can say to yourself when you feel a panic attack or high anxiety approaching?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 252,
+        "question": "Reflect on a time someone set a boundary with you. How did you react, and what did it teach you?",
+        "type": "Relationships"
+    },
+    {
+        "id": 253,
+        "question": "How many times a day do you check your phone out of habit rather than necessity? How can you reduce this?",
+        "type": "Productivity"
+    },
+    {
+        "id": 254,
+        "question": "If you could live in any era of history, knowing what you know now, which one would you choose?",
+        "type": "Future"
+    },
+    {
+        "id": 255,
+        "question": "What is the most beautiful thing someone has ever said to you about your character?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 256,
+        "question": "Write a short story starting with the sentence: 'The clock struck thirteen, and everything changed.'",
+        "type": "Creativity"
+    },
+    {
+        "id": 257,
+        "question": "How does your body feel when you are properly hydrated versus when you are dehydrated?",
+        "type": "Health"
+    },
+    {
+        "id": 258,
+        "question": "What is a professional project you worked on that felt completely aligned with your personal values?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 259,
+        "question": "When you feel overwhelmed by sadness, do you prefer to be alone or with others? Why?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 260,
+        "question": "What was the most important 'unspoken rule' in your household growing up?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 261,
+        "question": "Think of a time you were 'rejected.' How did that rejection actually protect you from something worse?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 262,
+        "question": "What is one question you can ask someone today to make them feel truly seen and heard?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 263,
+        "question": "What is a part of your body that you’ve struggled to love? What is one function it performs that you admire?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 264,
+        "question": "When making a group decision, do you tend to lead, follow, or facilitate? Why?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 265,
+        "question": "How do you think your upbringing influenced your views on social justice and equality?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 266,
+        "question": "Is it more important to be honest or to be kind when those two values are in conflict?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 267,
+        "question": "What is your biggest 'financial win' so far, and what did you do to celebrate it?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 268,
+        "question": "How does the layout of your bedroom influence the quality of your sleep and relaxation?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 269,
+        "question": "What is one spiritual or philosophical question that you hope to have answered before you die?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 270,
+        "question": "What is a habit you have that you would be embarrassed for others to see? What does it provide for you?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 271,
+        "question": "Write about a small 'win' you had this week that no one else noticed. Why was it important to you?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 272,
+        "question": "If you could inherit one personality trait from your mother and one from your father, which would they be?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 273,
+        "question": "Focus on the weight of your body in your chair. How does the support feel beneath you?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 274,
+        "question": "Describe your 'mental health toolkit'—the activities that consistently help you feel more balanced.",
+        "type": "Mental Health"
+    },
+    {
+        "id": 275,
+        "question": "How do you define 'intimacy'? Does it require physical touch, or can it be purely emotional?",
+        "type": "Relationships"
+    },
+    {
+        "id": 276,
+        "question": "What is one task you do every day that could be simplified? How would you go about it?",
+        "type": "Productivity"
+    },
+    {
+        "id": 277,
+        "question": "If you could ask a crystal ball one question about your future, what would it be?",
+        "type": "Future"
+    },
+    {
+        "id": 278,
+        "question": "Who is a fictional character you relate to on a deep level? What qualities do you share?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 279,
+        "question": "If you were to create a new color, what would you name it and what feeling would it represent?",
+        "type": "Creativity"
+    },
+    {
+        "id": 280,
+        "question": "How does your physical health affect your ability to be present and engaged with the people you love?",
+        "type": "Health"
+    },
+    {
+        "id": 281,
+        "question": "What is a professional goal you’ve set that you’re currently doubting? What would it take to regain your confidence?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 282,
+        "question": "Write about a time you felt a deep sense of betrayal. How did you eventually find a way to heal?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 283,
+        "question": "What was the most adventurous thing you did as a child? Do you still have that sense of adventure?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 284,
+        "question": "Think about a time you were 'knocked down' by life. What was the first thing you did to start getting back up?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 285,
+        "question": "What is one 'micro-habit' you can start today that will lead to a bigger change over time?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 286,
+        "question": "What is a 'negative' emotion that you are actually very comfortable feeling? Why do you think that is?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 287,
+        "question": "Reflect on a decision you made that was unpopular but you knew was right. How did you handle the criticism?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 288,
+        "question": "How do you think your community would change if everyone was 10% more generous with their time?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 289,
+        "question": "If you were a judge, how would you balance the need for justice with the need for mercy?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 290,
+        "question": "What is your 'financial philosophy' in one sentence?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 291,
+        "question": "How does the scent of your home influence your ability to relax when you walk through the door?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 292,
+        "question": "What does the word 'faith' mean to you? Is it something you have, or something you're looking for?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 293,
+        "question": "If you could have dinner with any version of yourself from the past, which one would it be and why?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 294,
+        "question": "Write about a time you felt a deep sense of connection to a complete stranger.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 295,
+        "question": "What is one thing you’ve learned about yourself through a difficult relationship?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 296,
+        "question": "Focus on the sound of your own breathing. Can you feel the air moving through your entire body?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 297,
+        "question": "What are three things you can do to support a friend who is struggling with their mental health?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 298,
+        "question": "How do you handle it when someone you love lets you down? Do you tend to forgive or hold a grudge?",
+        "type": "Relationships"
+    },
+    {
+        "id": 299,
+        "question": "If you could learn any language in the world instantly, which one would it be and what would you say first?",
+        "type": "Creativity"
+    },
+    {
+        "id": 300,
+        "question": "Reflect on a time you felt a deep sense of shame. What would you say to that version of yourself now?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 301,
+        "question": "What is one thing you would change about your daily routine if you were granted an extra hour of time every day?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 302,
+        "question": "List three things you love about your physical body that are related to its function rather than its appearance.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 303,
+        "question": "What is a piece of 'common wisdom' that you have found to be completely untrue in your own experience?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 304,
+        "question": "Take a moment to notice the temperature of the air on your skin. Is it warm, cool, or neutral? How does it feel?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 305,
+        "question": "When you are feeling mentally exhausted, what is the one activity that consistently helps you feel more like yourself?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 306,
+        "question": "Reflect on a time you had to deliver difficult news to someone. How did you handle the situation and what did you learn?",
+        "type": "Relationships"
+    },
+    {
+        "id": 307,
+        "question": "What is the most useful 'productivity hack' you’ve ever tried? Does it still work for you today?",
+        "type": "Productivity"
+    },
+    {
+        "id": 308,
+        "question": "If you could write a letter to your 80-year-old self, what questions would you ask about the life you have yet to live?",
+        "type": "Future"
+    },
+    {
+        "id": 309,
+        "question": "What is a piece of advice from a book or podcast that you find yourself quoting to other people frequently?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 310,
+        "question": "If you had to describe your life's journey so far using the metaphor of a weather system, what would it be?",
+        "type": "Creativity"
+    },
+    {
+        "id": 311,
+        "question": "How does your body react to caffeine or sugar? Describe the physical 'high' and the 'crash' that follows.",
+        "type": "Health"
+    },
+    {
+        "id": 312,
+        "question": "What is a professional project that failed, but taught you a lesson you still use in your career today?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 313,
+        "question": "Describe a time you felt a deep sense of 'unbelonging.' What was the core reason for that feeling?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 314,
+        "question": "What was your favorite book as a child? What about the story or the characters resonated with you then?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 315,
+        "question": "Reflect on a time you had to 'start from scratch' in some area of your life. How did you find the courage to begin?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 316,
+        "question": "What is one small way you can practice patience during a frustrating moment today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 317,
+        "question": "What is a secret 'guilty pleasure' that you feel ashamed of? Why do you think that shame exists?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 318,
+        "question": "When faced with a difficult decision, do you prefer to sleep on it or make the choice immediately to end the tension?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 319,
+        "question": "What is one thing about your neighborhood or city that you wish you could improve? How could you help?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 320,
+        "question": "What is a 'hill you are willing to die on'—a belief you hold so strongly you would never compromise on it?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 321,
+        "question": "What was the first thing you ever bought with your own hard-earned money? How did that purchase make you feel?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 322,
+        "question": "If you could change the color of the walls in your living space right now, what color would you choose and why?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 323,
+        "question": "How do you define the word 'soul'? Do you believe it is something distinct from your mind and body?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 324,
+        "question": "What is a recurring dream or thought you have? What do you think your subconscious is trying to tell you?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 325,
+        "question": "Write about a person you see regularly (like a cashier or neighbor) but don't know well. What are you grateful for in their presence?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 326,
+        "question": "What is a skill you’ve always wanted to learn but have been too intimidated to start? What is the first tiny step?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 327,
+        "question": "Notice the sounds that are occurring within your own body right now—your breath, your heartbeat, or your digestion.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 328,
+        "question": "Describe your relationship with social media. Does it leave you feeling connected or drained?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 329,
+        "question": "What is a 'love language' you struggle to speak? How can you practice it with someone you care about?",
+        "type": "Relationships"
+    },
+    {
+        "id": 330,
+        "question": "What is the most productive thing you did this week that wasn't related to your job or chores?",
+        "type": "Productivity"
+    },
+    {
+        "id": 331,
+        "question": "If you could travel 100 years into the future, what is the first thing you would want to look up in a history book?",
+        "type": "Future"
+    },
+    {
+        "id": 332,
+        "question": "Think of a time you were inspired by someone's kindness. How did that experience change your own behavior?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 333,
+        "question": "If you had to design a flag that represented your personal values, what symbols and colors would you use?",
+        "type": "Creativity"
+    },
+    {
+        "id": 334,
+        "question": "What is your body's most common 'stress signal' (e.g., tight shoulders, clenched jaw)? How can you soothe it?",
+        "type": "Health"
+    },
+    {
+        "id": 335,
+        "question": "What does 'leadership' mean to you in a professional context? Do you see yourself as a leader?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 336,
+        "question": "Recall a time you felt a deep sense of awe. What was the experience and how did it change your perspective?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 337,
+        "question": "What was the first 'grown-up' movie you ever saw? How did it shape your understanding of the world?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 338,
+        "question": "Think of a time you had to be resilient in the face of a health challenge. What did you learn about your body?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 339,
+        "question": "What is one thing you can do today to show kindness to a stranger without expecting anything in return?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 340,
+        "question": "Identify a trait you find annoying in a friend. How might that trait be a reflection of something you struggle with?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 341,
+        "question": "How do you handle 'buyer's remorse'? Does it prevent you from making future decisions?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 342,
+        "question": "What is a volunteer opportunity you’ve been considering? What is stopping you from signing up?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 343,
+        "question": "Is it more important to follow the rules or to do what you think is right? When are they the same?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 344,
+        "question": "What is your philosophy on debt? Is it a tool to be used or a burden to be avoided at all costs?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 345,
+        "question": "How does the amount of storage space in your home affect your sense of freedom and mobility?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 346,
+        "question": "What is one thing you believe in that would be considered 'unconventional' by the average person?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 347,
+        "question": "If you were to write a letter of recommendation for yourself, what are the three best qualities you would highlight?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 348,
+        "question": "Write about a small 'luxury' that you are grateful for, like a good cup of coffee or a soft blanket.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 349,
+        "question": "What is a 'comfort zone' you’ve been staying in for too long? What would it look like to step out of it?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 350,
+        "question": "Observe the way your hands move as you write or type. Notice the complexity of the movements.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 351,
+        "question": "Describe a time you felt a deep sense of 'burnout.' What were the signs you missed leading up to it?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 352,
+        "question": "What is a 'deal-breaker' for you in a romantic relationship? How did you arrive at that conclusion?",
+        "type": "Relationships"
+    },
+    {
+        "id": 353,
+        "question": "What is the 'one thing' on your to-do list that you’ve been avoiding for over a month? Why?",
+        "type": "Productivity"
+    },
+    {
+        "id": 354,
+        "question": "If you could know the exact date and time of one future event in your life, would you want to know it? Why?",
+        "type": "Future"
+    },
+    {
+        "id": 355,
+        "question": "Who is a person from history that you find particularly inspiring? What about their life resonates with you?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 356,
+        "question": "If you could create a new musical instrument, what would it sound like and how would it be played?",
+        "type": "Creativity"
+    },
+    {
+        "id": 357,
+        "question": "How does your diet affect your mental clarity and ability to focus during the day?",
+        "type": "Health"
+    },
+    {
+        "id": 358,
+        "question": "What is a professional achievement you’ve had that you felt was 'all luck'? Why are you hesitant to take credit?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 359,
+        "question": "Write about a time you felt a deep sense of relief. What was the burden you finally let go of?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 360,
+        "question": "What was the first 'job' you ever had, even if it was just a chore for a neighbor? What did you learn?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 361,
+        "question": "Think of a time you were 'knocked down' by a personal loss. How did you eventually find a way to keep going?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 362,
+        "question": "What is one way you can be more intentional with your words in your next conversation?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 363,
+        "question": "What is a part of your 'public persona' that feels most performative or inauthentic?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 364,
+        "question": "When making a big purchase, do you do extensive research or do you go with your first impression?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 365,
+        "question": "How does your upbringing influence the way you view wealth and poverty in society today?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 366,
+        "question": "If you were to create a 'manifesto' for your life, what would be the first three sentences?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 367,
+        "question": "What is the biggest financial mistake you’ve ever made? How has it changed your approach to money?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 368,
+        "question": "How does the presence (or absence) of plants in your home influence your overall sense of well-being?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 369,
+        "question": "What is one question about the universe that you hope science never fully answers? Why?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 370,
+        "question": "If you were a character in a movie, what would be your 'inciting incident'—the moment everything changed?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 371,
+        "question": "Write about a time you felt a deep sense of gratitude for a simple piece of advice.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 372,
+        "question": "What is one thing you’ve learned about yourself through a failed attempt at a new hobby?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 373,
+        "question": "Focus on the sensation of your tongue in your mouth. Is it relaxed or tense? Notice the points of contact.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 374,
+        "question": "What are three things you can do to support yourself when you feel a bout of depression coming on?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 375,
+        "question": "How do you handle it when a friend's success makes you feel 'less than'? How can you move toward celebration?",
+        "type": "Relationships"
+    },
+    {
+        "id": 376,
+        "question": "What is one thing you do every day that could be delegated to someone else? Why haven't you delegated it yet?",
+        "type": "Productivity"
+    },
+    {
+        "id": 377,
+        "question": "If you could ask a time traveler one question about the next ten years, what would it be?",
+        "type": "Future"
+    },
+    {
+        "id": 378,
+        "question": "Who is a contemporary person that you find inspiring for their integrity? What specific action did they take?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 379,
+        "question": "If you were to write a song about your current state of mind, what would the first verse and chorus be?",
+        "type": "Creativity"
+    },
+    {
+        "id": 380,
+        "question": "How does your relationship with exercise influence your overall sense of body positivity?",
+        "type": "Health"
+    },
+    {
+        "id": 381,
+        "question": "What is a professional 'failure' that you are now grateful for because it led you to a better opportunity?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 382,
+        "question": "Write about a time you felt a deep sense of betrayal from a friend. How did you eventually find a way to heal?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 383,
+        "question": "What was the most important 'unspoken rule' in your school growing up? Did you follow it?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 384,
+        "question": "Think of a time you had to be resilient in the face of a professional setback. What was your first step toward recovery?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 385,
+        "question": "What is one way you can be more present during your morning routine today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 386,
+        "question": "What is a 'negative' trait you see in your parents that you are starting to see in yourself? How can you address it?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 387,
+        "question": "When making a decision that affects others, do you prioritize harmony or the 'right' outcome? Why?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 388,
+        "question": "In what ways do you see yourself as a global citizen? How does that influence your daily choices?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 389,
+        "question": "If you were a judge in a court of ethics, what is one behavior you would declare 'unacceptable' but not illegal?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 390,
+        "question": "What is your 'financial safety net'—both in terms of money and the people you can turn to?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 391,
+        "question": "How does the organization of your digital space (files, emails) influence your overall sense of calm?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 392,
+        "question": "What does the word 'spirituality' mean to you in the context of your daily life and interactions?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 393,
+        "question": "If you could have a conversation with your future self from 20 years away, what is the first thing you'd ask?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 394,
+        "question": "Write about a time you felt a deep sense of connection to a piece of nature (a tree, a river, a mountain).",
+        "type": "Gratitude"
+    },
+    {
+        "id": 395,
+        "question": "What is one thing you’ve learned about yourself through a difficult conversation that didn't go well?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 396,
+        "question": "Focus on the sound of the air moving in the room—the hum of a heater, a fan, or the wind outside.",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 397,
+        "question": "What are three things you can do to support a colleague who is struggling with their workload?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 398,
+        "question": "How do you handle it when someone you care about disagrees with you on a fundamental value?",
+        "type": "Relationships"
+    },
+    {
+        "id": 399,
+        "question": "If you could learn any artistic skill instantly (like painting or sculpting), which would you choose and why?",
+        "type": "Creativity"
+    },
+    {
+        "id": 400,
+        "question": "Reflect on a time you felt a deep sense of regret. What would it take to turn that regret into a lesson?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 401,
+        "question": "What is a part of your life that feels \"on autopilot,\" and how can you bring more intention to it tomorrow?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 402,
+        "question": "Think of a piece of technology you use for entertainment. How has it added joy or relaxation to your life recently?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 403,
+        "question": "What is a project you started but never finished? What does that unfinished task represent to you now?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 404,
+        "question": "Sit quietly and notice the weight of your hands. Where are they resting, and what is the texture of the surface beneath them?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 405,
+        "question": "How do you define \"peace of mind\"? Is it the absence of stress or the presence of something else?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 406,
+        "question": "Recall a time someone gave you \"tough love.\" Was it effective, or did it cause more harm than good?",
+        "type": "Relationships"
+    },
+    {
+        "id": 407,
+        "question": "If you had to cut your work hours in half but maintain the same output, what specific tasks would you stop doing?",
+        "type": "Productivity"
+    },
+    {
+        "id": 408,
+        "question": "Imagine yourself in old age. What is the one thing you want to be able to say you never compromised on?",
+        "type": "Future"
+    },
+    {
+        "id": 409,
+        "question": "What is a quote that you found cheesy at first but eventually realized was deeply true?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 410,
+        "question": "If you were an architect tasked with building a \"house of emotions,\" what would the room for \"Joy\" look like?",
+        "type": "Creativity"
+    },
+    {
+        "id": 411,
+        "question": "What is your relationship with \"rest\"? Do you feel productive when you rest, or do you feel like you're wasting time?",
+        "type": "Health"
+    },
+    {
+        "id": 412,
+        "question": "What is a \"soft skill\" you’ve developed that has been more valuable than your technical training?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 413,
+        "question": "Write about a time you felt \"second-hand embarrassment.\" What does that reaction say about your own social fears?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 414,
+        "question": "What was a song your parents played on repeat? How do you feel when you hear it today?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 415,
+        "question": "Describe a time you were \"underestimated.\" How did that affect your motivation to succeed?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 416,
+        "question": "What is one way you can practice active listening in your very next conversation?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 417,
+        "question": "What is a secret you’ve never told anyone because you’re afraid of being judged? How does keeping it affect you?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 418,
+        "question": "Think of a choice you made that felt right at the time but ended poorly. Do you regret the choice or just the outcome?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 419,
+        "question": "How does your current lifestyle contribute to or detract from the local economy?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 420,
+        "question": "If you knew you could get away with something unethical for a massive reward, what would keep you from doing it?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 421,
+        "question": "What does \"financial legacy\" mean to you beyond just leaving money behind?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 422,
+        "question": "How does the color palette of your favorite room influence your energy levels?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 423,
+        "question": "When you look at the stars, do you feel small and insignificant, or connected to something vast?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 424,
+        "question": "What is a habit you’ve picked up recently that you’d like to keep for the rest of your life?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 425,
+        "question": "Name a teacher from your past who challenged you. Why are you grateful for that challenge now?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 426,
+        "question": "What does \"maturity\" look like to you today compared to when you were 21?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 427,
+        "question": "Notice the patterns of light and shadow in the room right now. How do they change the way the space feels?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 428,
+        "question": "What is a recurring thought that keeps you up at night? What is a compassionate way to \"answer\" that thought?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 429,
+        "question": "How has your definition of a \"good friend\" changed over the last decade?",
+        "type": "Relationships"
+    },
+    {
+        "id": 430,
+        "question": "What is the difference between \"efficiency\" and \"effectiveness\" in your current role?",
+        "type": "Productivity"
+    },
+    {
+        "id": 431,
+        "question": "If you were to start a business 10 years from now, what would it be and why?",
+        "type": "Future"
+    },
+    {
+        "id": 432,
+        "question": "Describe a moment when you saw someone do something selfless. How did it change your mood?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 433,
+        "question": "If you could illustrate your life story as a comic book, what would the cover of the current issue look like?",
+        "type": "Creativity"
+    },
+    {
+        "id": 434,
+        "question": "How does your environment (noise, temperature, air quality) impact your physical health?",
+        "type": "Health"
+    },
+    {
+        "id": 435,
+        "question": "What is a career path you almost took? Do you ever wonder \"what if\"?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 436,
+        "question": "How do you process feelings of \"longing\" for something you can't identify?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 437,
+        "question": "What was the \"cool\" thing to own when you were in middle school? Did you have it?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 438,
+        "question": "What is a \"scar\"—physical or emotional—that you are now proud of?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 439,
+        "question": "How can you incorporate five minutes of stillness into your routine today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 440,
+        "question": "What is a trait you find \"unattractive\" in others? How does that trait protect them (or you)?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 441,
+        "question": "What is the hardest \"no\" you’ve ever had to say? How did you feel after saying it?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 442,
+        "question": "What is one way the digital world has made your physical community stronger?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 443,
+        "question": "Would you rather be known for your honesty or your loyalty if you had to choose one?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 444,
+        "question": "What is a financial goal you have that isn't about buying a specific item?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 445,
+        "question": "If you could live in a different climate, how do you think it would change your personality?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 446,
+        "question": "What is a \"coincidence\" that happened to you that felt like more than just a coincidence?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 447,
+        "question": "What is your most common distraction when you are trying to be alone with your thoughts?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 448,
+        "question": "Write about a person who makes your life easier in a way that is usually invisible.",
+        "type": "Gratitude"
+    },
+    {
+        "id": 449,
+        "question": "What is a piece of feedback you received that hurt at first but ultimately helped you improve?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 450,
+        "question": "Focus on the sensation of your clothes touching your skin. Is the fabric soft, rough, or something else?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 451,
+        "question": "How do you know when you are beginning to \"people please\" at the expense of your own needs?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 452,
+        "question": "What is a tradition you have with a friend or partner that you hope never ends?",
+        "type": "Relationships"
+    },
+    {
+        "id": 453,
+        "question": "What is your \"shutdown ritual\" at the end of a workday? Does it help you transition to personal time?",
+        "type": "Productivity"
+    },
+    {
+        "id": 454,
+        "question": "What is a fear you have about the future that you know is likely irrational?",
+        "type": "Future"
+    },
+    {
+        "id": 455,
+        "question": "If you could give a TED Talk on any subject you are passionate about, what would be the title?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 456,
+        "question": "Rewrite a mundane task (like doing dishes) as if it were a high-stakes adventure.",
+        "type": "Creativity"
+    },
+    {
+        "id": 457,
+        "question": "What is one thing you can do to improve your \"sleep hygiene\" tonight?",
+        "type": "Health"
+    },
+    {
+        "id": 458,
+        "question": "What is a professional skill you've learned that you surprisingly use in your personal life?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 459,
+        "question": "Describe \"disappointment\" as if it were a physical object. What is its weight and temperature?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 460,
+        "question": "What was a specific \"boredom\" activity you did as a child before the age of smartphones?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 461,
+        "question": "Think of a time you were \"thrown into the deep end.\" How did you learn to swim?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 462,
+        "question": "What is one way you can be more \"gentle\" with yourself during a busy day?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 463,
+        "question": "In what ways do you manipulate others to get your needs met, even in small ways?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 464,
+        "question": "If you had to flip a coin for every decision today, which decision would you be most afraid to leave to chance?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 465,
+        "question": "How does the architecture of your city influence the way people interact with each other?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 466,
+        "question": "Is it better to do the right thing for the wrong reason, or the wrong thing for the right reason?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 467,
+        "question": "If you were to lose everything you own tomorrow, what would be the first thing you'd try to replace?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 468,
+        "question": "How does your current workspace reflect your mental state?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 469,
+        "question": "How do you practice \"reverence\" in your daily life?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 470,
+        "question": "What is a question you’ve been avoiding asking yourself?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 471,
+        "question": "Think of a time you were lost and someone helped you. How did that moment restore your faith in people?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 472,
+        "question": "What is the most \"grown-up\" thing you’ve done recently that made you feel like you're succeeding at life?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 473,
+        "question": "Notice the speed of your thoughts right now. Are they racing, or are they like slow-moving clouds?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 474,
+        "question": "What is the physical sensation of \"patience\" in your body? Where do you feel it most?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 475,
+        "question": "What is one thing you can do to improve the \"emotional safety\" in your primary relationship?",
+        "type": "Relationships"
+    },
+    {
+        "id": 476,
+        "question": "Identify a recurring \"distraction\" that keeps you from your goals. What is the root cause of that distraction?",
+        "type": "Productivity"
+    },
+    {
+        "id": 477,
+        "question": "If you were to live until 100, how would you change the way you spend your time today?",
+        "type": "Future"
+    },
+    {
+        "id": 478,
+        "question": "Who is the most \"alive\" person you know? What habits do they have that contribute to that vitality?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 479,
+        "question": "If you had to describe your life as a type of cuisine, what would the primary ingredients be?",
+        "type": "Creativity"
+    },
+    {
+        "id": 480,
+        "question": "What is a physical activity you do purely for the joy of movement, not for the outcome of fitness?",
+        "type": "Health"
+    },
+    {
+        "id": 481,
+        "question": "What does \"professional integrity\" mean to you? When was a time it was tested?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 482,
+        "question": "Describe a time you were surprised by your own strength during a crisis.",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 483,
+        "question": "What was the first thing you were ever \"fascinated\" by as a child?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 484,
+        "question": "What is a \"mantra\" you use when you feel like giving up on a difficult task?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 485,
+        "question": "What is one way you can be more intentional with your digital boundaries today?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 486,
+        "question": "What is a part of your personality that you try to \"edit\" when you are in professional settings?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 487,
+        "question": "How do you decide when a project or relationship is no longer worth the effort?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 488,
+        "question": "What is a piece of local history in your town that you find interesting or meaningful?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 489,
+        "question": "What is an ethical standard you hold yourself to that you don't necessarily expect from others?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 490,
+        "question": "How does your relationship with \"risk\" affect your financial decisions?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 491,
+        "question": "If you could change one thing about the way your city is designed to make it more peaceful, what would it be?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 492,
+        "question": "How do you define sacredness? Is it tied to a place, a person, or an internal feeling?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 493,
+        "question": "What is a question you’ve been asking others that you should actually be asking yourself?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 494,
+        "question": "Think of a time you were grateful for a \"boring\" day. What made the simplicity so valuable?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 495,
+        "question": "What is the most significant \"u-turn\" you ve made in your life so far?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 496,
+        "question": "Focus on the air entering your lungs. Can you feel the exact moment the inhale becomes an exhale?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 497,
+        "question": "What is a \"permission\" you need to give yourself today to feel mentally lighter?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 498,
+        "question": "How do you handle it when someone you love has a fundamentally different life priority than you?",
+        "type": "Relationships"
+    },
+    {
+        "id": 499,
+        "question": "If you could invent a new holiday, what would it be called and what would be the mandatory tradition?",
+        "type": "Creativity"
+    },
+    {
+        "id": 500,
+        "question": "Looking back at these prompts, which category of your life feels most in need of attention right now?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 501,
+        "question": "What is something unexpected that happened to you recently? How did it impact you?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 502,
+        "question": "What does love mean to you? How would you describe it to someone else?",
+        "type": "Relationships"
+    },
+    {
+        "id": 503,
+        "question": "What was one of the best days of your life, and why? Also, what was one of the worst?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 504,
+        "question": "What are five small moments that you were grateful for in the past week?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 505,
+        "question": "What was one of the scariest moments of your life, and why was it scary?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 506,
+        "question": "How did you come to live at your current residence, and why are you living here?",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 507,
+        "question": "How do you define personal success, and how do you plan to achieve it?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 508,
+        "question": "How will you enjoy retirement when you no longer want to work?",
+        "type": "Future"
+    },
+    {
+        "id": 509,
+        "question": "How has the past year treated you? What can you do to make this year better?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 510,
+        "question": "How have your current habits been serving you? Are there any that need to change?",
+        "type": "Productivity"
+    },
+    {
+        "id": 511,
+        "question": "Why are you hesitating to take the next step on a personal project? What do you need to move forward?",
+        "type": "Productivity"
+    },
+    {
+        "id": 512,
+        "question": "Why is your current lifestyle satisfactory? If it isn't, why not?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 513,
+        "question": "Why are you working at your job? How can you make your job better serve your needs?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 514,
+        "question": "Why should someone invest in you today? What do you want to accomplish?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 515,
+        "question": "Why haven't you taken a risk recently? What do you need to take a calculated risk?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 516,
+        "question": "Who has had the greatest influence on your life? What did they do?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 517,
+        "question": "Who is pushing you to be the best version of yourself? Who is sabotaging your efforts?",
+        "type": "Relationships"
+    },
+    {
+        "id": 518,
+        "question": "Who has done a recent act of kindness for you? Who can you do a random act of kindness to today?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 519,
+        "question": "Who is your personal role model? Why are they your role model?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 520,
+        "question": "Who has invested in your well-being recently? Who could you invest in?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 521,
+        "question": "When life gets overwhelming, what do you do to regain composure?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 522,
+        "question": "When was the last time you did an activity for only yourself? When can you do so again?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 523,
+        "question": "When did you last take a significant risk? What was it and why did you do it?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 524,
+        "question": "When was the last time you were genuinely curious?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 525,
+        "question": "When do you reflect on your life? Do you regularly schedule a time to reflect?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 526,
+        "question": "What is your favorite time of the day and why?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 527,
+        "question": "How did you meet your first best friend? What are they up to now?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 528,
+        "question": "When have you exceeded your expectations? What did you do?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 529,
+        "question": "Of all living people, who would you most like to have a three-hour dinner with?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 530,
+        "question": "Are you a spender or a saver? Why?",
+        "type": "Finances & Security"
+    },
+    {
+        "id": 531,
+        "question": "Life is too short to tolerate __________________.",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 532,
+        "question": "If you could get rid of any one bad habit, what would it be?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 533,
+        "question": "Describe a fear you overcame and how you did so.",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 534,
+        "question": "What is the most valuable lesson you have learned? Who taught it to you?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 535,
+        "question": "If you could have any career, what would it be and why?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 536,
+        "question": "What do you wish you were the best at?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 537,
+        "question": "How has fear held you back? What would you do if you were 10 times more confident?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 538,
+        "question": "Write down an interesting, insightful, or inspiring insight that changed your mind.",
+        "type": "Inspiration"
+    },
+    {
+        "id": 539,
+        "question": "List down three goals you want to achieve within the next three months.",
+        "type": "Future"
+    },
+    {
+        "id": 540,
+        "question": "What is something unique about you that no one knows? Why haven't you shared it?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 541,
+        "question": "Have you ever had a nickname? What is it and how did you earn the name?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 542,
+        "question": "What is your biggest regret? What is your greatest accomplishment?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 543,
+        "question": "Journal about your favorite artist, author, or creator. Why do you enjoy their work?",
+        "type": "Creativity"
+    },
+    {
+        "id": 544,
+        "question": "How would you behave if you didn't care about other people's expectations?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 545,
+        "question": "Other than money, what have you gained from your current job?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 546,
+        "question": "Who has made you laugh recently? What did they do to make you laugh?",
+        "type": "Relationships"
+    },
+    {
+        "id": 547,
+        "question": "List your favorite foods, drinks, snacks, desserts, and more. When was the last time you enjoyed one of them with a friend?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 548,
+        "question": "Create a motto for your life.",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 549,
+        "question": "When was the last time you overcame a difficult obstacle? How did you beat it?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 550,
+        "question": "Have you taken a day to disconnect from responsibilities? When was the last time you did so?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 551,
+        "question": "If you had a magic wand to solve any one problem, what would it be and how would your life change?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 552,
+        "question": "If you were unapologetically loved and accepted by yourself, what would change moving forward?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 553,
+        "question": "What are you the best at? What do you love doing the most? How could you spend more time engaging in both activities?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 554,
+        "question": "What makes your heart happy? What gives you the greatest thrills?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 555,
+        "question": "What do you believe is holding you back in your life? What could you do to change it to serve you?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 556,
+        "question": "Where do you see yourself in three months, six months, nine months, and twelve months? Be specific.",
+        "type": "Future"
+    },
+    {
+        "id": 557,
+        "question": "What are your top five memories? Why do they hold a special place in your mind?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 558,
+        "question": "How would your life change if you woke up and stopped worrying about your past and your future?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 559,
+        "question": "What scares you the most and why? How can you tackle this fear so it controls less of your life?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 560,
+        "question": "If you could go back in time and tell yourself one piece of advice, what would it be?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 561,
+        "question": "What are three things you are looking forward to doing this week? Why?",
+        "type": "Daily Intentions"
+    },
+    {
+        "id": 562,
+        "question": "Who do you need to forgive? What's stopping you from doing so today?",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 563,
+        "question": "What opportunities do you have in front of you right now? What's making you hesitate to decide?",
+        "type": "Decision Making"
+    },
+    {
+        "id": 564,
+        "question": "How would you like to be remembered when you are gone?",
+        "type": "Future"
+    },
+    {
+        "id": 565,
+        "question": "What energizes you? What drains you? How can you maximize your energizers and limit your drainers?",
+        "type": "Productivity"
+    },
+    {
+        "id": 566,
+        "question": "What is an assumption about yourself or the world that has been holding you back?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 567,
+        "question": "What is something that is worrying you at the moment? How have you tried to address it?",
+        "type": "Mental Health"
+    },
+    {
+        "id": 568,
+        "question": "What was the last book you read? What about it was interesting or useful?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 569,
+        "question": "If you were happier, how would people know?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 570,
+        "question": "List five people you spend the most time with in your day-to-day life. How are these people helping you grow or live a fulfilling life?",
+        "type": "Relationships"
+    },
+    {
+        "id": 571,
+        "question": "What do you like about yourself? Why do you like these aspects?",
+        "type": "Gratitude"
+    },
+    {
+        "id": 572,
+        "question": "What advice would you give to a random stranger?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 573,
+        "question": "When did you last spend time with your family or a close friend?",
+        "type": "Relationships"
+    },
+    {
+        "id": 574,
+        "question": "If there were no limits or obstacles in your way, journal about where would you be in 10 years.",
+        "type": "Future"
+    },
+    {
+        "id": 575,
+        "question": "When was the last time you were seriously sick? How did you heal yourself?",
+        "type": "Health"
+    },
+    {
+        "id": 576,
+        "question": "When was the last time you tried something you were not good at? How did it go?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 577,
+        "question": "What are you settling for in your life right now? How could you change that?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 578,
+        "question": "Journal about one controversial belief you hold and why you hold firm to it.",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 579,
+        "question": "What is something you don't want anyone to know about you and why?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 580,
+        "question": "List your favorite activities as a child. When did you engage one of those activities?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 581,
+        "question": "If not now, then when?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 582,
+        "question": "What is the last thing you've done that is worth remembering?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 583,
+        "question": "When you are 80 years old what will matter to you most?",
+        "type": "Future"
+    },
+    {
+        "id": 584,
+        "question": "Write about your last intense encounter and why was it fulfilling or nerve-wracking.",
+        "type": "Emotional Processing"
+    },
+    {
+        "id": 585,
+        "question": "Would you break the law to hold to a personal value? What value and why?",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 586,
+        "question": "If you could brainwash someone into believing something what would it be and why?",
+        "type": "Inspiration"
+    },
+    {
+        "id": 587,
+        "question": "What would you require to be taught in schools if you were in charge of national education?",
+        "type": "Community & Society"
+    },
+    {
+        "id": 588,
+        "question": "Which is worse, never making an attempt or failing while trying?",
+        "type": "Personal Growth"
+    },
+    {
+        "id": 589,
+        "question": "When was the last time you meditated or took a moment to focus on your surroundings?",
+        "type": "Mindfulness"
+    },
+    {
+        "id": 590,
+        "question": "What does the American Dream mean to you and how are you achieving it?",
+        "type": "Spirituality & Beliefs"
+    },
+    {
+        "id": 591,
+        "question": "What is the most desirable trait that another person can possess?",
+        "type": "Relationships"
+    },
+    {
+        "id": 592,
+        "question": "How would you describe a good leader? How would you describe the good follower?",
+        "type": "Career & Ambition"
+    },
+    {
+        "id": 593,
+        "question": "Are you more worried about doing things right or doing the right things? Journal about it.",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 594,
+        "question": "What is one lie you believed for most of your life?",
+        "type": "Shadow Work"
+    },
+    {
+        "id": 595,
+        "question": "How would you describe yourself to a stranger?",
+        "type": "Self-Reflection"
+    },
+    {
+        "id": 596,
+        "question": "Reflect on a moment when you stood up for yourself. What was the result?",
+        "type": "Resilience & Adversity"
+    },
+    {
+        "id": 597,
+        "question": "What were you like as a 7-year-old?",
+        "type": "Childhood & Nostalgia"
+    },
+    {
+        "id": 598,
+        "question": "List 3 counterintuitive truths. 'Most people think ______________, but the truth is ________________.'",
+        "type": "Values & Ethics"
+    },
+    {
+        "id": 599,
+        "question": "Describe your ideal vacation in detail.",
+        "type": "Physical Environment"
+    },
+    {
+        "id": 600,
+        "question": "If you could give a gift to anyone, what gift would you give and why?",
+        "type": "Relationships"
+    }
+]

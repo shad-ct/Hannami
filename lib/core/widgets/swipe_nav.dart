@@ -17,10 +17,10 @@ class _SwipeNavState extends State<SwipeNav> {
     const threshold = 90.0; // pixels
     final idx = AppNavigation.indexFromRoute(widget.currentRoute);
     if (_accumulatedDx <= -threshold) {
-      final next = (idx + 1).clamp(0, 3);
+      final next = (idx + 1).clamp(0, 4);
       if (next != idx) AppNavigation.navigateIndex(context, next);
     } else if (_accumulatedDx >= threshold) {
-      final prev = (idx - 1).clamp(0, 3);
+      final prev = (idx - 1).clamp(0, 4);
       if (prev != idx) AppNavigation.navigateIndex(context, prev);
     }
     _accumulatedDx = 0;
